@@ -1,0 +1,11 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\bin\Debug\BookCollectionConsole.exe.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\bin\Debug\BookCollectionConsole.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\bin\Debug\BookCollectionConsole.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\bin\Debug\BookCollection.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\bin\Debug\BookCollection.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\obj\Debug\BookCollectionConsole.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\obj\Debug\BookCollectionConsole.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\obj\Debug\BookCollectionConsole.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\bin\Debug\NLog.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\bin\Debug\NLog.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\bin\Debug\NLog.xml

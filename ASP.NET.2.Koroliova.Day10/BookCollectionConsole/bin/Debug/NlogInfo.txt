@@ -1,0 +1,104 @@
+21.04.2016 23:54:21 (DEBUG): Created new book :Don't sterve, I, 2016
+21.04.2016 23:54:21 (INFO): Created new book :Don't sterve, I, 2016
+21.04.2016 23:54:21 (INFO): Created new book :Don't sterve, I, 2016
+21.04.2016 23:54:21 (DEBUG): Created new book :Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:21 (INFO): Created new book :Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:21 (INFO): Created new book :Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:21 (DEBUG): Created new book :Gobsek, Balsak, 1974
+21.04.2016 23:54:21 (INFO): Created new book :Gobsek, Balsak, 1974
+21.04.2016 23:54:21 (INFO): Created new book :Gobsek, Balsak, 1974
+21.04.2016 23:54:21 (INFO): Library create with name : Library.dat
+21.04.2016 23:54:21 (INFO): Library create with name : Library.dat
+21.04.2016 23:54:21 (DEBUG): Begins adding new book. ...
+21.04.2016 23:54:21 (DEBUG): Adding library finished
+21.04.2016 23:54:21 (INFO): Added new book : Don't sterve, I, 2016
+21.04.2016 23:54:21 (INFO): Added new book : Don't sterve, I, 2016
+21.04.2016 23:54:21 (DEBUG): Begins adding new book. ...
+21.04.2016 23:54:21 (DEBUG): Adding library finished
+21.04.2016 23:54:21 (INFO): Added new book : Gobsek, Balsak, 1974
+21.04.2016 23:54:21 (INFO): Added new book : Gobsek, Balsak, 1974
+21.04.2016 23:54:22 (DEBUG): Begins adding new book. ...
+21.04.2016 23:54:22 (DEBUG): Adding library finished
+21.04.2016 23:54:22 (INFO): Added new book : Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:22 (INFO): Added new book : Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:22 (DEBUG): Begins saving library. ...
+21.04.2016 23:54:22 (DEBUG): Saving library finished
+21.04.2016 23:54:22 (INFO): Saved new library
+21.04.2016 23:54:22 (INFO): Saved new library
+21.04.2016 23:54:22 (DEBUG): Begins search for books on criterion. ...
+21.04.2016 23:54:22 (DEBUG): Searching book on criterion finished. 
+21.04.2016 23:54:22 (DEBUG): Begins search for books on criterion. ...
+21.04.2016 23:54:22 (DEBUG): Find :Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:22 (DEBUG): Searching book on criterion finished. 
+21.04.2016 23:54:22 (DEBUG): Begins removing book. ...
+21.04.2016 23:54:22 (DEBUG): Removing library finished
+21.04.2016 23:54:22 (INFO): You removed book : Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:22 (INFO): You removed book : Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:22 (DEBUG): Begins search for books on criterion. ...
+21.04.2016 23:54:22 (DEBUG): Searching book on criterion finished. 
+21.04.2016 23:54:22 (DEBUG): Begins loading library. ...
+21.04.2016 23:54:22 (DEBUG): Created new book :Don't sterve, I, 2016
+21.04.2016 23:54:22 (INFO): Created new book :Don't sterve, I, 2016
+21.04.2016 23:54:22 (INFO): Created new book :Don't sterve, I, 2016
+21.04.2016 23:54:22 (DEBUG): Created new book :Gobsek, Balsak, 1974
+21.04.2016 23:54:22 (INFO): Created new book :Gobsek, Balsak, 1974
+21.04.2016 23:54:22 (INFO): Created new book :Gobsek, Balsak, 1974
+21.04.2016 23:54:22 (DEBUG): Created new book :Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:22 (INFO): Created new book :Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:22 (INFO): Created new book :Good side, Nerovnya Nataliya, 2016
+21.04.2016 23:54:22 (DEBUG): Loading library finished
+21.04.2016 23:54:22 (INFO): Load new library
+21.04.2016 23:54:22 (INFO): Load new library
+21.04.2016 23:54:22 (DEBUG): Begins sorting books by criterion. ...
+22.04.2016 01:09:29 (DEBUG): Created new book :Don't sterve, I, 2016
+22.04.2016 01:09:29 (INFO): Created new book :Don't sterve, I, 2016
+22.04.2016 01:09:29 (INFO): Created new book :Don't sterve, I, 2016
+22.04.2016 01:09:29 (DEBUG): Created new book :Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:29 (INFO): Created new book :Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:29 (INFO): Created new book :Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:29 (DEBUG): Created new book :Gobsek, Balsak, 1974
+22.04.2016 01:09:29 (INFO): Created new book :Gobsek, Balsak, 1974
+22.04.2016 01:09:29 (INFO): Created new book :Gobsek, Balsak, 1974
+22.04.2016 01:09:29 (INFO): Library create with name : Library.dat
+22.04.2016 01:09:29 (INFO): Library create with name : Library.dat
+22.04.2016 01:09:29 (DEBUG): Begins adding new book. ...
+22.04.2016 01:09:29 (DEBUG): Adding library finished
+22.04.2016 01:09:29 (INFO): Added new book : Don't sterve, I, 2016
+22.04.2016 01:09:29 (INFO): Added new book : Don't sterve, I, 2016
+22.04.2016 01:09:29 (DEBUG): Begins adding new book. ...
+22.04.2016 01:09:29 (DEBUG): Adding library finished
+22.04.2016 01:09:29 (INFO): Added new book : Gobsek, Balsak, 1974
+22.04.2016 01:09:29 (INFO): Added new book : Gobsek, Balsak, 1974
+22.04.2016 01:09:29 (DEBUG): Begins adding new book. ...
+22.04.2016 01:09:29 (DEBUG): Adding library finished
+22.04.2016 01:09:29 (INFO): Added new book : Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:29 (INFO): Added new book : Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:29 (DEBUG): Begins saving library. ...
+22.04.2016 01:09:29 (DEBUG): Saving library finished
+22.04.2016 01:09:29 (INFO): Saved new library
+22.04.2016 01:09:29 (INFO): Saved new library
+22.04.2016 01:09:30 (DEBUG): Begins search for books on criterion. ...
+22.04.2016 01:09:31 (DEBUG): Searching book on criterion finished. 
+22.04.2016 01:09:31 (DEBUG): Begins search for books on criterion. ...
+22.04.2016 01:09:31 (DEBUG): Find :Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:31 (DEBUG): Searching book on criterion finished. 
+22.04.2016 01:09:31 (DEBUG): Begins removing book. ...
+22.04.2016 01:09:31 (DEBUG): Removing library finished
+22.04.2016 01:09:31 (INFO): You removed book : Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:31 (INFO): You removed book : Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:31 (DEBUG): Begins search for books on criterion. ...
+22.04.2016 01:09:31 (DEBUG): Searching book on criterion finished. 
+22.04.2016 01:09:31 (DEBUG): Begins loading library. ...
+22.04.2016 01:09:31 (DEBUG): Created new book :Don't sterve, I, 2016
+22.04.2016 01:09:31 (INFO): Created new book :Don't sterve, I, 2016
+22.04.2016 01:09:31 (INFO): Created new book :Don't sterve, I, 2016
+22.04.2016 01:09:31 (DEBUG): Created new book :Gobsek, Balsak, 1974
+22.04.2016 01:09:31 (INFO): Created new book :Gobsek, Balsak, 1974
+22.04.2016 01:09:31 (INFO): Created new book :Gobsek, Balsak, 1974
+22.04.2016 01:09:31 (DEBUG): Created new book :Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:31 (INFO): Created new book :Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:31 (INFO): Created new book :Good side, Nerovnya Nataliya, 2016
+22.04.2016 01:09:31 (DEBUG): Loading library finished
+22.04.2016 01:09:31 (INFO): New Library saved
+22.04.2016 01:09:31 (INFO): New Library saved
+22.04.2016 01:09:31 (DEBUG): Begins sorting books by criterion. ...
