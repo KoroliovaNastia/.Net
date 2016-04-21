@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCollection", "..\ASP.NET.2.Koroliova.Day9\BookCollection\BookCollection.csproj", "{2CE350D4-68B8-4A79-9A3F-9F2FD902FBAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCollectionConsole", "..\ASP.NET.2.Koroliova.Day9\BookCollectionConsole\BookCollectionConsole.csproj", "{E33BE1DD-9987-48BD-A78A-5ED379A9AF63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CE350D4-68B8-4A79-9A3F-9F2FD902FBAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE350D4-68B8-4A79-9A3F-9F2FD902FBAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE350D4-68B8-4A79-9A3F-9F2FD902FBAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE350D4-68B8-4A79-9A3F-9F2FD902FBAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E33BE1DD-9987-48BD-A78A-5ED379A9AF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E33BE1DD-9987-48BD-A78A-5ED379A9AF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E33BE1DD-9987-48BD-A78A-5ED379A9AF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E33BE1DD-9987-48BD-A78A-5ED379A9AF63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
