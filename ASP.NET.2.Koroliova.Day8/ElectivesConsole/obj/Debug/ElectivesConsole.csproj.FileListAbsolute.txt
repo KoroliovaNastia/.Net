@@ -1,0 +1,11 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\bin\Debug\ElectivesConsole.exe.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\bin\Debug\ElectivesConsole.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\bin\Debug\ElectivesConsole.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\bin\Debug\Electives.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\bin\Debug\Electives.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\obj\Debug\ElectivesConsole.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\obj\Debug\ElectivesConsole.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\obj\Debug\ElectivesConsole.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\bin\Debug\NLog.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\bin\Debug\NLog.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day8\ElectivesConsole\bin\Debug\NLog.xml

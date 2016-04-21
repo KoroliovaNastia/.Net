@@ -1,0 +1,6 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\Expantion\bin\Debug\Expantion.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\Expantion\bin\Debug\Expantion.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\Expantion\obj\Debug\Expantion.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\Expantion\obj\Debug\Expantion.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\Expantion\obj\Debug\Expantion.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\Expantion\bin\Debug\Expantion.XML

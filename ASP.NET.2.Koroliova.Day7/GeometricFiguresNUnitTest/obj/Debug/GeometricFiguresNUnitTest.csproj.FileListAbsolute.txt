@@ -1,0 +1,9 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFiguresNUnitTest\bin\Debug\GeometricFiguresNUnitTest.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFiguresNUnitTest\bin\Debug\GeometricFiguresNUnitTest.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFiguresNUnitTest\bin\Debug\GeometricFigures.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFiguresNUnitTest\bin\Debug\nunit.framework.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFiguresNUnitTest\bin\Debug\GeometricFigures.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFiguresNUnitTest\bin\Debug\nunit.framework.xml
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFiguresNUnitTest\obj\Debug\GeometricFiguresNUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFiguresNUnitTest\obj\Debug\GeometricFiguresNUnitTest.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFiguresNUnitTest\obj\Debug\GeometricFiguresNUnitTest.pdb

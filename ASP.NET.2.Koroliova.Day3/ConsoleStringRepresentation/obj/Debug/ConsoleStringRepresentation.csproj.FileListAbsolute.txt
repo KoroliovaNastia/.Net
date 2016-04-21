@@ -1,0 +1,8 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleStringRepresentation\bin\Debug\ConsoleStringRepresentation.exe.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleStringRepresentation\obj\Debug\ConsoleStringRepresentation.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleStringRepresentation\bin\Debug\ConsoleStringRepresentation.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleStringRepresentation\bin\Debug\ConsoleStringRepresentation.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleStringRepresentation\bin\Debug\StringRepresentation.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleStringRepresentation\bin\Debug\StringRepresentation.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleStringRepresentation\obj\Debug\ConsoleStringRepresentation.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleStringRepresentation\obj\Debug\ConsoleStringRepresentation.pdb

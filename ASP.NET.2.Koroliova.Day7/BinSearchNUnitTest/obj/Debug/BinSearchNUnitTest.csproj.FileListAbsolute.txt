@@ -1,0 +1,9 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearchNUnitTest\bin\Debug\BinSearchNUnitTest.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearchNUnitTest\bin\Debug\BinSearchNUnitTest.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearchNUnitTest\bin\Debug\BinSearch.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearchNUnitTest\bin\Debug\nunit.framework.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearchNUnitTest\bin\Debug\BinSearch.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearchNUnitTest\bin\Debug\nunit.framework.xml
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearchNUnitTest\obj\Debug\BinSearchNUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearchNUnitTest\obj\Debug\BinSearchNUnitTest.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearchNUnitTest\obj\Debug\BinSearchNUnitTest.pdb

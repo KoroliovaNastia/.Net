@@ -1,0 +1,5 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgoritms\bin\Debug\GcdAlgoritms.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgoritms\bin\Debug\GcdAlgoritms.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgoritms\obj\Debug\GcdAlgoritms.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgoritms\obj\Debug\GcdAlgoritms.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgoritms\obj\Debug\GcdAlgoritms.pdb

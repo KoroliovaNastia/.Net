@@ -1,0 +1,10 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\Sorting.NUnitTests\bin\Debug\Sorting.NUnitTests.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\Sorting.NUnitTests\bin\Debug\Sorting.NUnitTests.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\Sorting.NUnitTests\bin\Debug\nunit.framework.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\Sorting.NUnitTests\bin\Debug\Sorting.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\Sorting.NUnitTests\bin\Debug\Sorting.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\Sorting.NUnitTests\bin\Debug\Sorting.xml
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\Sorting.NUnitTests\bin\Debug\nunit.framework.xml
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\Sorting.NUnitTests\obj\Debug\Sorting.NUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\Sorting.NUnitTests\obj\Debug\Sorting.NUnitTests.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\Sorting.NUnitTests\obj\Debug\Sorting.NUnitTests.pdb

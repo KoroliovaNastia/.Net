@@ -1,0 +1,8 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2Test\bin\Debug\Task2Test.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2Test\bin\Debug\Task2Test.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2Test\bin\Debug\Task2.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2Test\bin\Debug\Task2.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2Test\bin\Debug\Task2.xml
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2Test\obj\Debug\Task2Test.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2Test\obj\Debug\Task2Test.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2Test\obj\Debug\Task2Test.pdb

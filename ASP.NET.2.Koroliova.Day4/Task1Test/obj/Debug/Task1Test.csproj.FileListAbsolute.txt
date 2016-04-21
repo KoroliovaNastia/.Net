@@ -1,0 +1,8 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task1Test\bin\Debug\Task1Test.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task1Test\bin\Debug\Task1Test.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task1Test\bin\Debug\Task1.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task1Test\bin\Debug\Task1.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task1Test\bin\Debug\Task1.xml
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task1Test\obj\Debug\Task1Test.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task1Test\obj\Debug\Task1Test.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task1Test\obj\Debug\Task1Test.pdb

@@ -1,0 +1,7 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\PolinomTest\bin\Debug\PolinomTest.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\PolinomTest\bin\Debug\PolinomTest.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\PolinomTest\bin\Debug\Polinom.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\PolinomTest\bin\Debug\Polinom.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\PolinomTest\obj\Debug\PolinomTest.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\PolinomTest\obj\Debug\PolinomTest.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\PolinomTest\obj\Debug\PolinomTest.pdb

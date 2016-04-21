@@ -1,0 +1,5 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearch\bin\Debug\BinSearch.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearch\bin\Debug\BinSearch.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearch\obj\Debug\BinSearch.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearch\obj\Debug\BinSearch.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\BinSearch\obj\Debug\BinSearch.pdb

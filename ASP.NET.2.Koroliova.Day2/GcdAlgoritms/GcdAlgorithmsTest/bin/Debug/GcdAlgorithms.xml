@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GcdAlgorithms</name>
+    </assembly>
+    <members>
+        <member name="T:GcdAlgorithms.FindGcd">
+            <summary>
+            Class which implements Euclidean and Stains algorithms finding GCD.
+            </summary>
+        </member>
+        <member name="M:GcdAlgorithms.FindGcd.Gcd(System.Int32,System.Int32,GcdAlgorithms.FindGcd.GcdDelegate)">
+            <summary>
+            Method finding gcd of two numbers
+            </summary>
+            <param name="a">First number</param>
+            <param name="b">Second number</param>
+            <param name="func">Gcd delegate</param>
+            <returns></returns>
+        </member>
+        <member name="M:GcdAlgorithms.FindGcd.Gcd(System.Int32,System.Int32,System.Int64@,GcdAlgorithms.FindGcd.GcdDelegate)">
+            <summary>
+            Overriding Gcd method of two numbers with execution time of the algorithm
+            </summary>
+            <param name="a">First number</param>
+            <param name="b">Second number</param>
+            <param name="time">Execution time of the algorithm</param>
+            <param name="func">Gcd delegate</param>
+            <returns></returns>
+        </member>
+        <member name="M:GcdAlgorithms.FindGcd.Gcd(System.Int32,System.Int32,System.Int32,GcdAlgorithms.FindGcd.GcdDelegate)">
+            <summary>
+            Method finding gcd of three numbers
+            </summary>
+            <param name="a">First number</param>
+            <param name="b">Second number</param>
+            <param name="c">Third number</param>
+            <param name="func">Gcd delegate</param>
+            <returns></returns>
+        </member>
+        <member name="M:GcdAlgorithms.FindGcd.Gcd(System.Int32,System.Int32,System.Int32,System.Int64@,GcdAlgorithms.FindGcd.GcdDelegate)">
+            <summary>
+            Overriding Gcd method of three numbers with execution time of the algorithm
+            </summary>
+            <param name="a">First number</param>
+            <param name="b">Second number</param>
+            <param name="c">Third number</param>
+            <param name="time">Execution time of the algorithm</param>
+            <param name="func">Gcd delegate</param>
+            <returns></returns>
+        </member>
+        <member name="M:GcdAlgorithms.FindGcd.Gcd(GcdAlgorithms.FindGcd.GcdDelegate,System.Int32[])">
+            <summary>
+            Method finding Gcd with different input parameters
+            </summary>
+            <param name="func">Gcd delegate</param>
+            <param name="list">Numbers</param>
+            <returns></returns>
+        </member>
+        <member name="M:GcdAlgorithms.FindGcd.Gcd(System.Int64@,GcdAlgorithms.FindGcd.GcdDelegate,System.Int32[])">
+            <summary>
+            Overriding Gcd method of different numbers with execution time of the algorithm
+            </summary>
+            <param name="time">Execution time of the algorithm</param>
+            <param name="func">Gcd delegate</param>
+            <param name="list">Numbers</param>
+            <returns></returns>
+        </member>
+        <member name="M:GcdAlgorithms.FindGcd.GcdEuclidian(System.Int32,System.Int32)">
+            <summary>
+            Euclidian GCD Algorithm
+            </summary>
+            <param name="a">First number</param>
+            <param name="b">Second number</param>
+            <returns>GCD</returns>
+        </member>
+        <member name="M:GcdAlgorithms.FindGcd.GcdSteins(System.Int32,System.Int32)">
+            <summary>
+            Stains GCD Algorithm
+            </summary>
+            <param name="a">Firs number</param>
+            <param name="b">Second number</param>
+            <returns>GCD</returns>
+        </member>
+        <member name="T:GcdAlgorithms.FindGcd.GcdDelegate">
+            <summary>
+            Gcd Delegate which implements Euclidean and Steins algorithms
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

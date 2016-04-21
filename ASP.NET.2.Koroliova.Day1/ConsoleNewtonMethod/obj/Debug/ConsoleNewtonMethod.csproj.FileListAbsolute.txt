@@ -1,0 +1,8 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleNewtonMethod\bin\Debug\ConsoleNewtonMethod.exe.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleNewtonMethod\bin\Debug\ConsoleNewtonMethod.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleNewtonMethod\bin\Debug\ConsoleNewtonMethod.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleNewtonMethod\bin\Debug\NewtonMethod.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleNewtonMethod\bin\Debug\NewtonMethod.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleNewtonMethod\obj\Debug\ConsoleNewtonMethod.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleNewtonMethod\obj\Debug\ConsoleNewtonMethod.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleNewtonMethod\obj\Debug\ConsoleNewtonMethod.pdb

@@ -1,0 +1,9 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\ConsoleFindGcd\bin\Debug\ConsoleFindGcd.exe.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\ConsoleFindGcd\bin\Debug\ConsoleFindGcd.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\ConsoleFindGcd\bin\Debug\ConsoleFindGcd.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\ConsoleFindGcd\obj\Debug\ConsoleFindGcd.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\ConsoleFindGcd\obj\Debug\ConsoleFindGcd.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\ConsoleFindGcd\obj\Debug\ConsoleFindGcd.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\ConsoleFindGcd\bin\Debug\GcdAlgorithms.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\ConsoleFindGcd\bin\Debug\GcdAlgorithms.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\ConsoleFindGcd\bin\Debug\GcdAlgorithms.xml

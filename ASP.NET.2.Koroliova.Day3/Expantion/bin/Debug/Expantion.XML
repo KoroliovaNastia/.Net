@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Expantion</name>
+    </assembly>
+    <members>
+        <member name="T:Expantion.HexFormat">
+            <summary>
+            Static class with expantion method
+            </summary>
+        </member>
+        <member name="F:Expantion.HexFormat.regex">
+            <summary>
+            Regular expression which correspond the standard form of format string for numbers
+            </summary>
+        </member>
+        <member name="M:Expantion.HexFormat.ConvertToHex(System.Int32)">
+            <summary>
+            Conversion method using a format string for numbers
+            </summary>
+            <param name="number">Type of expansion</param>
+            <returns>A string representation of a hexadecimal number</returns>
+        </member>
+        <member name="M:Expantion.HexFormat.ConvertToHex(System.Int32,System.String)">
+            <summary>
+            Overriding the method 
+            </summary>
+            <param name="number"></param>
+            <param name="str">Standart format string for numbers</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

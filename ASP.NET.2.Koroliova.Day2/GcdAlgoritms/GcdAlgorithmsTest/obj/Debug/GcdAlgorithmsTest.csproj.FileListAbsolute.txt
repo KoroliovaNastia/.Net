@@ -1,0 +1,8 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgorithmsTest\bin\Debug\GcdAlgorithmsTest.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgorithmsTest\bin\Debug\GcdAlgorithmsTest.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgorithmsTest\bin\Debug\GcdAlgorithms.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgorithmsTest\bin\Debug\GcdAlgorithms.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgorithmsTest\bin\Debug\GcdAlgorithms.xml
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgorithmsTest\obj\Debug\GcdAlgorithmsTest.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgorithmsTest\obj\Debug\GcdAlgorithmsTest.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\GcdAlgoritms\GcdAlgorithmsTest\obj\Debug\GcdAlgorithmsTest.pdb

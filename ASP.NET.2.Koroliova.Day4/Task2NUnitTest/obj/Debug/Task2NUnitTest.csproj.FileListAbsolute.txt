@@ -1,0 +1,10 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2NUnitTest\bin\Debug\Task2NUnitTest.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2NUnitTest\bin\Debug\Task2NUnitTest.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2NUnitTest\bin\Debug\nunit.framework.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2NUnitTest\bin\Debug\Task2.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2NUnitTest\bin\Debug\Task2.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2NUnitTest\bin\Debug\Task2.xml
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2NUnitTest\bin\Debug\nunit.framework.xml
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2NUnitTest\obj\Debug\Task2NUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2NUnitTest\obj\Debug\Task2NUnitTest.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\Task2NUnitTest\obj\Debug\Task2NUnitTest.pdb

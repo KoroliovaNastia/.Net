@@ -1,0 +1,9 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleExpantion\bin\Debug\ConsoleExpantion.exe.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleExpantion\bin\Debug\ConsoleExpantion.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleExpantion\bin\Debug\ConsoleExpantion.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleExpantion\bin\Debug\Expantion.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleExpantion\bin\Debug\Expantion.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleExpantion\obj\Debug\ConsoleExpantion.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleExpantion\obj\Debug\ConsoleExpantion.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleExpantion\obj\Debug\ConsoleExpantion.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\ConsoleExpantion\bin\Debug\Expantion.xml

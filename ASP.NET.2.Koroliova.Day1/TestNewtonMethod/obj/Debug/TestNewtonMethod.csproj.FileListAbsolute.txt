@@ -1,0 +1,9 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\TestNewtonMethod\bin\Debug\TestNewtonMethod.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\TestNewtonMethod\bin\Debug\TestNewtonMethod.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\TestNewtonMethod\bin\Debug\NewtonMethod.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\TestNewtonMethod\bin\Debug\NewtonMethod.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\TestNewtonMethod\obj\Debug\TestNewtonMethod.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\TestNewtonMethod\obj\Debug\TestNewtonMethod.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\TestNewtonMethod\obj\Debug\TestNewtonMethod.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\TestNewtonMethod\bin\Debug\nunit.framework.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\TestNewtonMethod\bin\Debug\nunit.framework.xml

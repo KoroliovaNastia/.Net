@@ -1,0 +1,5 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\StringRepresentation\bin\Debug\StringRepresentation.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\StringRepresentation\bin\Debug\StringRepresentation.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\StringRepresentation\obj\Debug\StringRepresentation.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\StringRepresentation\obj\Debug\StringRepresentation.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day3\StringRepresentation\obj\Debug\StringRepresentation.pdb

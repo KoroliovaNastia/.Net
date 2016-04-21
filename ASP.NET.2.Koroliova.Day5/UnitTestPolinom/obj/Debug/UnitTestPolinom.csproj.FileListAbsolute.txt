@@ -1,0 +1,10 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\UnitTestPolinom\obj\Debug\UnitTestPolinom.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\UnitTestPolinom\bin\Debug\UnitTestPolinom.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\UnitTestPolinom\bin\Debug\UnitTestPolinom.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\UnitTestPolinom\bin\Debug\nunit.framework.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\UnitTestPolinom\bin\Debug\pnunit.framework.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\UnitTestPolinom\bin\Debug\Polinom.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\UnitTestPolinom\bin\Debug\Polinom.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\UnitTestPolinom\bin\Debug\nunit.framework.xml
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\UnitTestPolinom\obj\Debug\UnitTestPolinom.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\UnitTestPolinom\obj\Debug\UnitTestPolinom.pdb

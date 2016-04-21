@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sorting</name>
+    </assembly>
+    <members>
+        <member name="T:Sorting.SortJagArray">
+            <summary>
+            Sorting class of jagget array with using interface
+            </summary>
+        </member>
+        <member name="M:Sorting.SortJagArray.Sort(System.Int32[][])">
+            <summary>
+            Simple sorting class with standart compare
+            </summary>
+            <param name="mass">Merge sorting mass.</param>
+        </member>
+        <member name="M:Sorting.SortJagArray.Sort(System.Int32[][],System.Comparison{System.Int32[]})">
+            <param name="m">jagget array</param>
+            <param name="comparison">delegate</param>
+        </member>
+        <member name="M:Sorting.SortJagArray.SortMaxElem(System.Int32[],System.Int32[])">
+            <summary>
+            Sorting method by max element
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sorting.SortJagArray.SortMinElem(System.Int32[],System.Int32[])">
+            <summary>
+            Sorting method by min element
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sorting.SortJagArray.SortMaxSumm(System.Int32[],System.Int32[])">
+            <summary>
+            Sorting method by max summ of elements
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sorting.SortJagArray.StandartCompare(System.Int32[],System.Int32[])">
+            <summary>
+            Method with simple comparison
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+            <returns>Result of comparison</returns>
+        </member>
+        <member name="M:Sorting.SortJagArray.Swap(System.Int32[]@,System.Int32[]@)">
+            <summary>
+            Swap method
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+    </members>
+</doc>

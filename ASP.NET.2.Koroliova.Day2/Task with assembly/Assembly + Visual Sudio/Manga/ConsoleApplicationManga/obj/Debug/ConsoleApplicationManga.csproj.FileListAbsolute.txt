@@ -1,0 +1,8 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\Manga\ConsoleApplicationManga\bin\Debug\ConsoleApplicationManga.exe.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\Manga\ConsoleApplicationManga\bin\Debug\ConsoleApplicationManga.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\Manga\ConsoleApplicationManga\bin\Debug\ConsoleApplicationManga.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\Manga\ConsoleApplicationManga\bin\Debug\Manga.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\Manga\ConsoleApplicationManga\bin\Debug\Manga.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\Manga\ConsoleApplicationManga\obj\Debug\ConsoleApplicationManga.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\Manga\ConsoleApplicationManga\obj\Debug\ConsoleApplicationManga.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day2\Manga\ConsoleApplicationManga\obj\Debug\ConsoleApplicationManga.pdb

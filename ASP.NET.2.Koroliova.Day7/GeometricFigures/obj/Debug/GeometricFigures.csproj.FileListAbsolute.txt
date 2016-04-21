@@ -1,0 +1,5 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFigures\bin\Debug\GeometricFigures.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFigures\bin\Debug\GeometricFigures.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFigures\obj\Debug\GeometricFigures.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFigures\obj\Debug\GeometricFigures.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day7\GeometricFigures\obj\Debug\GeometricFigures.pdb

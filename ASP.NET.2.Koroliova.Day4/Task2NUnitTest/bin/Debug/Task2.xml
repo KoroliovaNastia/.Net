@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task2</name>
+    </assembly>
+    <members>
+        <member name="T:Task2.MyQueue`1">
+            <summary>
+            Generic class Queue.
+            </summary>
+            <typeparam name="T">Type of elements in our queue.</typeparam>
+        </member>
+        <member name="F:Task2.MyQueue`1.elem">
+            <summary>
+            Generic array.
+            </summary>
+        </member>
+        <member name="F:Task2.MyQueue`1.startCapacity">
+            <summary>
+            Capacity of generic array.
+            </summary>
+        </member>
+        <member name="F:Task2.MyQueue`1.begin">
+            <summary>
+            Start index.
+            </summary>
+        </member>
+        <member name="F:Task2.MyQueue`1.end">
+            <summary>
+            End index.
+            </summary>
+        </member>
+        <member name="M:Task2.MyQueue`1.#ctor">
+            <summary>
+            Constructor with default capacity or capacity given by user.
+            </summary>
+            <param name="cap">Given capacity.</param>
+        </member>
+        <!-- Некорректный комментарий в формате XML для члена "M:Task2.MyQueue`1.#ctor(System.Collections.Generic.IEnumerable{`0})" проигнорирован -->
+        <!-- Некорректный комментарий в формате XML для члена "M:Task2.MyQueue`1.Contains(`0)" проигнорирован -->
+        <!-- Некорректный комментарий в формате XML для члена "M:Task2.MyQueue`1.Clear" проигнорирован -->
+        <!-- Некорректный комментарий в формате XML для члена "M:Task2.MyQueue`1.Enqueue(`0)" проигнорирован -->
+        <!-- Некорректный комментарий в формате XML для члена "M:Task2.MyQueue`1.TrimExcess" проигнорирован -->
+        <!-- Некорректный комментарий в формате XML для члена "M:Task2.MyQueue`1.Dequeue" проигнорирован -->
+        <!-- Некорректный комментарий в формате XML для члена "M:Task2.MyQueue`1.Peek" проигнорирован -->
+        <!-- Некорректный комментарий в формате XML для члена "M:Task2.MyQueue`1.GetEnumerator" проигнорирован -->
+        <member name="M:Task2.MyQueue`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Некорректный комментарий в формате XML для члена "P:Task2.MyQueue`1.Count" проигнорирован -->
+    </members>
+</doc>

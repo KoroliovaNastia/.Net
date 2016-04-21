@@ -1,0 +1,9 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleSorting\bin\Debug\ConsoleSorting.exe.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleSorting\bin\Debug\ConsoleSorting.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleSorting\bin\Debug\ConsoleSorting.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleSorting\bin\Debug\Sorting.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleSorting\bin\Debug\Sorting.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleSorting\obj\Debug\ConsoleSorting.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleSorting\obj\Debug\ConsoleSorting.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleSorting\obj\Debug\ConsoleSorting.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day1\ConsoleSorting\bin\Debug\Sorting.xml

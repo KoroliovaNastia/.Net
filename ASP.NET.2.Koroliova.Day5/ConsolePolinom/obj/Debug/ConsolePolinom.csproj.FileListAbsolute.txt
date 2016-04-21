@@ -1,0 +1,8 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\ConsolePolinom\bin\Debug\ConsolePolinom.exe.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\ConsolePolinom\bin\Debug\ConsolePolinom.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\ConsolePolinom\bin\Debug\ConsolePolinom.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\ConsolePolinom\bin\Debug\Polinom.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\ConsolePolinom\bin\Debug\Polinom.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\ConsolePolinom\obj\Debug\ConsolePolinom.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\ConsolePolinom\obj\Debug\ConsolePolinom.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day5\ConsolePolinom\obj\Debug\ConsolePolinom.pdb

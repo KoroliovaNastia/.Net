@@ -1,0 +1,9 @@
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\ConsoleTask1\bin\Debug\ConsoleTask1.exe.config
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\ConsoleTask1\bin\Debug\ConsoleTask1.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\ConsoleTask1\bin\Debug\ConsoleTask1.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\ConsoleTask1\bin\Debug\Task1.dll
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\ConsoleTask1\bin\Debug\Task1.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\ConsoleTask1\obj\Debug\ConsoleTask1.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\ConsoleTask1\obj\Debug\ConsoleTask1.exe
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\ConsoleTask1\obj\Debug\ConsoleTask1.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\ASP.NET.2.Koroliova.Day4\ConsoleTask1\bin\Debug\Task1.xml
