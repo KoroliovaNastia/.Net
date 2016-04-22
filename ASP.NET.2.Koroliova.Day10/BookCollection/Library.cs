@@ -11,12 +11,12 @@ namespace BookCollection
     /// <summary>
     /// Library of print edition
     /// </summary>
-    public class Library : IEnumerable<Publication>, ILibrary
+    public class Library : IEnumerable<IPublication>, ILibrary
     {
         #region Fields
 
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
-        private List<Publication> books = new List<Publication>();
+        private List<IPublication> books = new List<IPublication>();
         private readonly static string fileName;
 
         #endregion
@@ -41,7 +41,7 @@ namespace BookCollection
             {
                 using (BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.OpenOrCreate)))
                 {
-                    foreach (Publication book in books)
+                    foreach (IPublication book in books)
                     {
                         writer.Write(book.Name);
                         writer.Write(book.Author);
@@ -73,9 +73,13 @@ namespace BookCollection
         public void LoadLibrary()
         {
             logger.Debug("Begins loading library. ...");
-            if (File.Exists(fileName))
+            if (!File.Exists(fileName))
             {
-                try
+                logger.Warn("File Library.dat don't exist");
+                return;
+            }
+
+            try
                 {
                     using (BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)))
                     {
@@ -84,30 +88,27 @@ namespace BookCollection
                             string name = reader.ReadString();
                             string author = reader.ReadString();
                             int year = reader.ReadInt32();
-                            Publication book = new Book(name, author, year);
+                            IPublication book = new Book(name, author, year);
                             books.Add(book);
                         }
                     }
                 }
                 catch (IOException e)
                 {
-                    logger.Error("Error of reading. " + e.Message);
+                    logger.Fatal("Error of reading. " + e.Message);
                     throw;
                 }
                 catch (ObjectDisposedException e)
                 {
-                    logger.Error("The stream is closed. " + e.Message);
+                    logger.Fatal("The stream is closed. " + e.Message);
                     throw;
                 }
                 catch (Exception e)
                 {
-                    logger.Fatal("I don't know why and what, but smth failed when reading" + e.Message);
+                    logger.Fatal("Smth failed when reading" + e.Message);
+                    throw;
                 }
-            }
-            else
-            {
-                logger.Warn("File Lybrary.dat don't exist");
-            }
+            
             logger.Debug("Loading library finished");
             logger.Info("New Library saved");
         }
@@ -115,13 +116,19 @@ namespace BookCollection
         /// Method of interface of adding new book at the library. 
         /// </summary>
         /// <param name="book">Book which we try add. </param>
-        public void AddBook(Publication book)
+        public void AddBook(IPublication book)
         {
             logger.Debug("Begins adding new book. ...");
             if (book == null)
+            {
+                logger.Error("Null reference to a book in adding");
                 throw new ArgumentNullException();
+            }
             if (books.Contains(book))
+            {
+                logger.Error("This book don't found at the library");
                 throw new IOException();
+            }
             books.Add(book);
             logger.Debug("Adding library finished");
             logger.Info("Added new book : " + book);
@@ -130,64 +137,74 @@ namespace BookCollection
         /// Method of interface of removing book out  the library.
         /// </summary>
         /// <param name="book">Book which we try remove.</param>
-        public void RemoveBook(Publication book)
+        public void RemoveBook(IPublication book)
         {
             logger.Debug("Begins removing book. ...");
             if (book == null)
+            {
+                logger.Error("Null reference to a book in removing");
                 throw new ArgumentNullException("book");
+            }
             if (!books.Contains(book))
-                throw new ArgumentException("Book not found");
+            {
+                logger.Error("This book don't found at the library");
+                throw new ArgumentException();
+            }
             books.Remove(book);
             logger.Debug("Removing library finished");
             logger.Info("You removed book : " + book);
         }
         /// <summary>
-        /// Method of interface of searching books on criterion.
+        /// Method of interface of searching books on criteria.
         /// </summary>
-        /// <param name="criterionName">Name of criterion.</param>
-        /// <param name="criterion">Criterion.</param>
-        public void FindByTag(string criterionName, dynamic criterion)
+        /// <param name="predicate">Anonymus method neede finding </param>
+        public void FindByTag(Predicate<IPublication> predicate)
         {
             logger.Debug("Begins search for books on criterion. ...");
-            if (criterionName == null)
-
+            if (predicate == null)
+            {
+                logger.Error("Null reference to a predicate");
                 throw new ArgumentNullException();
+            }
             try
             {
-                foreach (var book in books.FindAll(x => x.Criterion(criterionName) == criterion))
+                List<IPublication> list=new List<IPublication>();
+                foreach (var book in books.FindAll(predicate))
                 {
                     logger.Debug("Find :" + book);
+                    list.Add(book);
                 }
+                if (list.Capacity == 0)
+                    logger.Debug("Books not found");
             }
-            catch (RuntimeBinderException e)
+            catch (Exception e)
             {
 
-                logger.Error("Your criterion does not satisfy the required type" + e.Message);
+                logger.Error("Method FindByTag work not correctly " + e.Message);
                 throw;
             }
             logger.Debug("Searching book on criterion finished. ");
 
         }
         /// <summary>
-        /// Method of interface of sorting books on criterion.
+        /// Method of interface of sorting books on criteria.
         /// </summary>
-        /// <param name="criterion">Criterion.</param>
-        public void SortBooksByTag(string criterion)
+        /// <param name="comparer">Comparer.</param>
+        public void SortBooksByTag(Comparison<IPublication>  comparer)
         {
             logger.Debug("Begins sorting books by criterion. ...");
-            if (criterion == null)
-                throw new ArgumentNullException("criterion");
+            if (comparer == null)
+            {
+                logger.Fatal("Null reference to a comparer");
+                throw new ArgumentNullException("comparer");
+            }
             try
             {
-                books.Sort(
-                    delegate(Publication book1, Publication book2)
-                    {
-                        return book1.Criterion(criterion).CompareTo(book2.Criterion(criterion));
-                    });
+                books.Sort(comparer);
             }
             catch (Exception e)
             {
-                logger.Fatal("I don't know why and what, but smth failed when sorting" + e.Message);
+                logger.Fatal("Smth failed when sorting" + e.Message);
                 throw;
             }
         }
@@ -199,12 +216,9 @@ namespace BookCollection
         /// Enumerator of publication.
         /// </summary>
         /// <returns>Return publication (in this case - book).</returns>
-        public IEnumerator<Publication> GetEnumerator()
+        public IEnumerator<IPublication> GetEnumerator()
         {
-            foreach (var book in books)
-            {
-                yield return book;
-            }
+            return books.GetEnumerator();
         }
         IEnumerator IEnumerable.GetEnumerator()
         {

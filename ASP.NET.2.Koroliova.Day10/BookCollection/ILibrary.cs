@@ -24,23 +24,22 @@ namespace BookCollection
         /// Method of adding the book.
         /// </summary>
         /// <param name="book"></param>
-        void AddBook(Publication book);
+        void AddBook(IPublication book);
         /// <summary>
         /// Method of removing the book.
         /// </summary>
         /// <param name="book"></param>
-        void RemoveBook(Publication book);
+        void RemoveBook(IPublication book);
         /// <summary>
         /// Method of finding book on criterion.
         /// </summary>
-        /// <param name="criterionName">Name of criterion</param>
-        /// <param name="criterion">Criterion.</param>
-        void FindByTag(string criterionName, dynamic criterion);
+        /// <param name="predicate">Anonymus method for finding needed books</param>
+        void FindByTag(Predicate<IPublication> predicate);
         /// <summary>
         /// Method of sorting library of book on criterion.
         /// </summary>
-        /// <param name="criterion"></param>
-        void SortBooksByTag(string criterion);
+        /// <param name="comparer"></param>
+        void SortBooksByTag(Comparison<IPublication> comparer );
 
     }
 }
