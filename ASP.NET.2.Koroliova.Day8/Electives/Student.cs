@@ -6,40 +6,109 @@ using System.Threading.Tasks;
 
 namespace Electives
 {
+    /// <summary>
+    /// Class Student. This type can subscribe on course.
+    /// </summary>
     public class Student : IStudent
     {
-        private IDisposable _unsubscriber;
-        private ICourse _course;
-        private readonly string _studentName;
+        #region Fields
 
+        private IDisposable unsubscriber;
+        private ICourse course;
+        private readonly string studentName;
+
+        #endregion
+
+        #region Ctror
+        /// <summary>
+        /// Ctor of class Student.
+        /// </summary>
+        /// <param name="fio">Students fio.</param>
         public Student(string fio)
         {
-            _studentName = fio;
+            studentName = fio;
         }
-        public string StudentName { get { return _studentName; } }
-        public  void Subscribe(ICourse course)
+        #endregion
+
+        #region Property
+        /// <summary>
+        /// Property returning student fio.
+        /// </summary>
+        public string StudentName { get { return studentName; } }
+
+        #endregion
+
+        #region Public Void Methods
+
+        #region Non Virtual
+        /// <summary>
+        /// Method implements of interface method which subscribe student on the cours.
+        /// </summary>
+        /// <param name="myCourse">Cours</param>
+        public void Subscribe(ICourse myCourse)
         {
-            _unsubscriber = course.Subscribe(this);
-            _course = course;
+            NLogger.Logger.Trace("Student want subscribe at cours " + myCourse.CoursInfo().CourseName + ". ...");
+            try
+            {
+                unsubscriber = myCourse.Subscribe(this);
+                course = myCourse;
+            }
+            catch (NullReferenceException e)
+            {
+                NLogger.Logger.Fatal("Null reference on cours." + e.Message);
+                throw;
+            }
+            NLogger.Logger.Trace("Sibscribing finished.");
+            NLogger.Logger.Info("You (" + studentName + ") subscribe at this course(" + myCourse.CoursInfo().CourseName + ").");
         }
+        #endregion
+
+        #region Virtual
+        /// <summary>
+        /// Method implements of interface method which unsubscribe student from the cours.
+        /// </summary>
         public virtual void Unsubscribe()
         {
-            NLogger.Logger.Info("You ("+_studentName+") unsubscribe from this course("+_course.CoursInfo().CourseName+").");
-            _unsubscriber.Dispose();
+            NLogger.Logger.Info("You (" + studentName + ") unsubscribe from this course(" + course.CoursInfo().CourseName + ").");
+            try
+            {
+                unsubscriber.Dispose();
+            }
+            catch (Exception e)
+            {
+                NLogger.Logger.Fatal("Unable to unsubscribe from the course"+e.Message);
+                throw;
+            }
+        
         }
-
+        /// <summary>
+        /// Method implements method of interface IObserver  which completed that course finished.
+        /// </summary>
         public virtual void OnCompleted()
         {
             NLogger.Logger.Info("You finished course.");
         }
-        public virtual void OnError(Exception error)
-        { }
 
+        /// <summary>
+        /// Method implements method of interface IObserver  which reports about error.
+        /// </summary>
+        /// <param name="error">Error</param>
+        public virtual void OnError(Exception error)
+        {
+            NLogger.Logger.Fatal("Cours inform about FATAL ERROR."+error.Message);
+        }
+        /// <summary>
+        /// Method implements method of interface IObserver  which reports that course start.
+        /// </summary>
+        /// <param name="value"></param>
         public virtual void OnNext(ICourseInfo value)
         {
             NLogger.Logger.Info("New course start: name of course - {1},  lector - {0}.", value.LectorName, value.CourseName);
-          
+
         }
+        #endregion
+
+        #endregion
     }
 
 }

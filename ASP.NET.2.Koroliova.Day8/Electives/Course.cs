@@ -6,78 +6,132 @@ using System.Threading.Tasks;
 
 namespace Electives
 {
-    public class Course :ICourse
+    /// <summary>
+    /// Course.
+    /// </summary>
+    public class Course : ICourse
     {
-        private ICourseInfo _course;
-        
-        private List<IStudent> _observers;
+        #region Fields
 
+        private ICourseInfo course;
+
+        private List<IStudent> observers;
+        #endregion
+
+        #region Property
+        /// <summary>
+        /// Return professor.
+        /// </summary>
         public ILector Professor { get; private set; }
 
+        #endregion
+
+        #region Ctor
         public Course(ICourseInfo courseInfo)
         {
-            _course = courseInfo;
-            _observers = new List<IStudent>();
-            
+            course = courseInfo;
+            observers = new List<IStudent>();
+
         }
+        #endregion
 
-        //public virtual IDisposable Subscribe(IStudent observer)
-        //{
-        //    if (!_observers.Contains(observer))
-        //        _observers.Add(observer);
-
-        //    return new Unsubscriber(_observers, observer);
-        //}
+        #region Methods
+        /// <summary>
+        /// Subscribe observer
+        /// </summary>
+        /// <param name="observer">Observer</param>
+        /// <returns></returns>
         public IDisposable Subscribe(IStudent observer)
         {
-            if (!_observers.Contains(observer))
-                _observers.Add(observer);
-
-            return new Unsubscriber(_observers, observer);
+            if (!observers.Contains(observer))
+                observers.Add(observer);
+            else NLogger.Logger.Warn("This student already subscribe on course.");
+            return new Unsubscriber(observers, observer);
         }
 
         public IDisposable Subscribe(IObserver<ICourseInfo> observer)
         {
-           return Subscribe((IStudent) observer);
+            return Subscribe((IStudent)observer);
         }
+        /// <summary>
+        /// Add observer of course.
+        /// </summary>
+        /// <param name="student"></param>
         public void AddObserver(IStudent student)
         {
-            _observers.Add(student);
-        }
-
-        public void StartCours()
-        {
-            foreach (var observer in _observers)
+            try
             {
-                observer.OnNext(_course);
+                if (student == null)
+                {
+                    NLogger.Logger.Fatal("Null reference on the student at adding observer.");
+                }
+                observers.Add(student);
+            }
+            catch (Exception e)
+            {
+                NLogger.Logger.Fatal("Course inform about FATAL ERROR" + e.Message);
+                throw;
             }
         }
 
+        /// <summary>
+        /// Alert to listener about starting cousre.
+        /// </summary>
+        public void StartCours()
+        {
+            NLogger.Logger.Trace("Course start, alert to listeners.");
+            try
+            {
+                foreach (var observer in observers)
+                {
+                    observer.OnNext(course);
+                }
+            }
+            catch (Exception e)
+            {
+                NLogger.Logger.Fatal("Course inform about FATAL ERROR" + e.Message);
+                throw;
+            }
+        }
+        /// <summary>
+        /// Method for finishing course and listener alert.
+        /// </summary>
         public void FinishedCours()
         {
-            foreach (var observer in _observers)
+            NLogger.Logger.Trace("Course finished, alert to listeners.");
+            foreach (var observer in observers)
             {
                 observer.OnCompleted();
             }
         }
 
-        
 
+        /// <summary>
+        /// Return course
+        /// </summary>
+        /// <returns></returns>
         public ICourseInfo CoursInfo()
         {
-            return _course;
+            return course;
         }
 
+        /// <summary>
+        /// Return mark of student.
+        /// </summary>
+        /// <param name="student">Student</param>
         public void GetMark(IStudent student)
         {
-            if (_observers.Contains(student))
-                if(Archive.Instance.GetMark(student, this)>0.0)
-                NLogger.Logger.Info("Student " + student.StudentName + " received at the course '" + _course.CourseName + "' the mark :" +  Archive.Instance.GetMark(student, this));
-            //return Professor.SetTheMark(student);
-            // Archive.Dictionary();
+            if (student == null)
+                throw new NullReferenceException("student have null reference");
+            if (observers.Contains(student))
+                if (Archive.Instance.GetMark(student, this) > 0.0)
+                    NLogger.Logger.Info("Student " + student.StudentName + " received at the course '" +
+                                        course.CourseName + "' the mark :" + Archive.Instance.GetMark(student, this));
+
+
         }
 
-        
+        #endregion
     }
 
 }

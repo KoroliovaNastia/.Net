@@ -45,6 +45,8 @@ namespace GeometricFigures
         }
         public CoordPoint(double x, double y)
         {
+            if(Double.IsNaN(x)||Double.IsNaN(y)||Double.IsInfinity(x)||Double.IsInfinity(y))
+                throw new ArgumentException();
             this.x = x;
             this.y = y;
         }

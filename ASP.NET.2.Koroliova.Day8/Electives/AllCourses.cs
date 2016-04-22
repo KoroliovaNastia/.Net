@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Electives
 {
+    /// <summary>
+    /// List of all courses.
+    /// </summary>
    public class AllCourses
     {
          private List<ICourse> _allCourses = new List<ICourse>();
