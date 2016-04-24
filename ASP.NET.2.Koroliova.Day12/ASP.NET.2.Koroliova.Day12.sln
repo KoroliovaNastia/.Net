@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1", "Task1", "{03311237-D2CB-44F0-90B1-669329E419DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2", "Task2", "{33AB6310-D43B-4744-B4FD-0BDEAF8C75DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timer", "Timer\Timer.csproj", "{B085EBEF-DF17-4011-96DD-DBF6AFBEA411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{0A7336C3-FDC7-4B21-95DC-7624E76AE784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciConsole", "FibonacciConsole\FibonacciConsole.csproj", "{3FEE3829-F474-4E42-8F89-2CCFCEF19E47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerConsole", "TimerConsole\TimerConsole.csproj", "{39B186A5-54D4-408C-A958-E7DDD8806ED5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B085EBEF-DF17-4011-96DD-DBF6AFBEA411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B085EBEF-DF17-4011-96DD-DBF6AFBEA411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B085EBEF-DF17-4011-96DD-DBF6AFBEA411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B085EBEF-DF17-4011-96DD-DBF6AFBEA411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A7336C3-FDC7-4B21-95DC-7624E76AE784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7336C3-FDC7-4B21-95DC-7624E76AE784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A7336C3-FDC7-4B21-95DC-7624E76AE784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7336C3-FDC7-4B21-95DC-7624E76AE784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FEE3829-F474-4E42-8F89-2CCFCEF19E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FEE3829-F474-4E42-8F89-2CCFCEF19E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FEE3829-F474-4E42-8F89-2CCFCEF19E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FEE3829-F474-4E42-8F89-2CCFCEF19E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39B186A5-54D4-408C-A958-E7DDD8806ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B186A5-54D4-408C-A958-E7DDD8806ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B186A5-54D4-408C-A958-E7DDD8806ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B186A5-54D4-408C-A958-E7DDD8806ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B085EBEF-DF17-4011-96DD-DBF6AFBEA411} = {03311237-D2CB-44F0-90B1-669329E419DE}
+		{0A7336C3-FDC7-4B21-95DC-7624E76AE784} = {33AB6310-D43B-4744-B4FD-0BDEAF8C75DC}
+		{3FEE3829-F474-4E42-8F89-2CCFCEF19E47} = {33AB6310-D43B-4744-B4FD-0BDEAF8C75DC}
+		{39B186A5-54D4-408C-A958-E7DDD8806ED5} = {03311237-D2CB-44F0-90B1-669329E419DE}
+	EndGlobalSection
+EndGlobal
