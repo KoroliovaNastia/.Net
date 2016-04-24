@@ -16,6 +16,8 @@ namespace Timer
       /// <param name="report">Save needed message</param>
         public TimeEventArgs(string report)
         {
+            if(report==null)
+                throw new ArgumentNullException();
             message = report;
         }
       /// <summary>
