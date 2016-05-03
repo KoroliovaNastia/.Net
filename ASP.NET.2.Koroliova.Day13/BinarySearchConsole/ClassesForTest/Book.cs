@@ -37,7 +37,7 @@ namespace BinarySearchConsole
 
         public override string ToString()
         {
-            return "{" + Name + " " + Author + " " + AgeOfPublication + "}";
+            return "{/////  " + Name + " " + Author + " " + AgeOfPublication + "  /////}";
         }
 
         #endregion

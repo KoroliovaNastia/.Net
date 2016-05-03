@@ -32,65 +32,82 @@ namespace BinarySearchConsole
 
             };
             BinaryTree<int> threeInts=new BinaryTree<int>(massInt);
-            BinaryTree<string> threeString=new BinaryTree<string>(massString);
-            BinaryTree<Book> threeBook=new BinaryTree<Book>(books);
-            BinaryTree<Point> threePoints=new BinaryTree<Point>(points, new PointComparer());
+            BinaryTree<string> threeString = new BinaryTree<string>(massString);
+            BinaryTree<Book> threeBook = new BinaryTree<Book>(books);
+            BinaryTree<Point> threePoints = new BinaryTree<Point>(points, new PointComparer());
 
-            //IEnumerable<int> intInorder = threeInts.InOrderEnum();
-            //IEnumerable<int> intPreorder = threeInts.PreOrderEnum();
-            //IEnumerable<int> intPostorder = threeInts.PostOrderEnum();
-            //Console.WriteLine("Int mass inorder:");
-            //foreach (var item in intInorder)
-            //    Console.Write(item + " ");
-            //Console.WriteLine("Int mass preorder:");
-            //foreach (var item in intPreorder)
-            //    Console.Write(item + " ");
-            //Console.WriteLine("Int mass postorder:");
-            //foreach (var item in intPostorder)
-            //    Console.Write(item + " ");
-            //Console.WriteLine();
+            IEnumerable<int> intInorder = threeInts.InOrderEnum();
+            IEnumerable<int> intPreorder = threeInts.PreOrderEnum();
+            IEnumerable<int> intPostorder = threeInts.PostOrderEnum();
+            Console.WriteLine("\nInt mass inorder:");
+            foreach (var item in intInorder)
+                Console.Write(item + " ");
+            Console.WriteLine("\nInt mass preorder:");
+            foreach (var item in intPreorder)
+                Console.Write(item + " ");
+            Console.WriteLine("\nInt mass postorder:");
+            foreach (var item in intPostorder)
+                Console.Write(item + " ");
+            Console.WriteLine();
 
-            //IEnumerable<string> stringInorder = threeString.InOrderEnum();
-            //IEnumerable<string> stringPreorder = threeString.PreOrderEnum();
-            //IEnumerable<string> stringPostorder = threeString.PostOrderEnum();
-            //Console.WriteLine("String mass inorder:");
-            //foreach (var item in stringInorder)
-            //    Console.Write(item + " ");
-            //Console.WriteLine("String mass preorder:");
-            //foreach (var item in stringPreorder)
-            //    Console.Write(item + " ");
-            //Console.WriteLine("String mass postorder:");
-            //foreach (var item in stringPostorder)
-            //    Console.Write(item + " ");
-            //Console.WriteLine();
+            IEnumerable<string> stringInorder = threeString.InOrderEnum();
+            IEnumerable<string> stringPreorder = threeString.PreOrderEnum();
+            IEnumerable<string> stringPostorder = threeString.PostOrderEnum();
+            Console.WriteLine("\nString mass inorder:");
+            foreach (var item in stringInorder)
+                Console.Write(item + " ");
+            Console.WriteLine("\nString mass preorder:");
+            foreach (var item in stringPreorder)
+                Console.Write(item + " ");
+            Console.WriteLine("\nString mass postorder:");
+            foreach (var item in stringPostorder)
+                Console.Write(item + " ");
+            Console.WriteLine();
 
-            //IEnumerable<Book> bookInorder = threeBook.InOrderEnum();
-            //IEnumerable<Book> bookPreorder = threeBook.PreOrderEnum();
-            //IEnumerable<Book> bookPostorder = threeBook.PostOrderEnum();
-            //Console.WriteLine("Books mass inorder:");
-            //foreach (var item in bookInorder)
-            //    Console.Write(item + " ");
-            //Console.WriteLine("Books mass preorder:");
-            //foreach (var item in bookPreorder)
-            //    Console.Write(item + " ");
-            //Console.WriteLine("Books mass postorder:");
-            //foreach (var item in bookPostorder)
-            //    Console.Write(item + " ");
-            //Console.WriteLine();
+            IEnumerable<Book> bookInorder = threeBook.InOrderEnum();
+            IEnumerable<Book> bookPreorder = threeBook.PreOrderEnum();
+            IEnumerable<Book> bookPostorder = threeBook.PostOrderEnum();
+            Console.WriteLine("\nBooks mass inorder:");
+            foreach (var item in bookInorder)
+                Console.Write(item + " ");
+            Console.WriteLine("\nBooks mass preorder:");
+            foreach (var item in bookPreorder)
+                Console.Write(item + " ");
+            Console.WriteLine("\nBooks mass postorder:");
+            foreach (var item in bookPostorder)
+                Console.Write(item + " ");
+            Console.WriteLine();
 
             IEnumerable<Point> pointInorder = threePoints.InOrderEnum();
             IEnumerable<Point> pointPreorder = threePoints.PreOrderEnum();
             IEnumerable<Point> pointPostorder = threePoints.PostOrderEnum();
-            Console.WriteLine("Points mass inorder:");
+            Console.WriteLine("\nPoints mass inorder:");
             foreach (var item in pointInorder)
                 Console.Write(item + " ");
-            Console.WriteLine("Points mass preorder:");
+            Console.WriteLine("\nPoints mass preorder:");
             foreach (var item in pointPreorder)
                 Console.Write(item + " ");
-            Console.WriteLine("Points mass postorder:");
+            Console.WriteLine("\nPoints mass postorder:");
             foreach (var item in pointPostorder)
                 Console.Write(item + " ");
             Console.WriteLine();
+
+            Console.WriteLine(threePoints.Find(new Point(1, 2)));
+            Console.WriteLine("\n Remove 80 from int mass: ");
+            threeInts.Remove(80);
+            intInorder = threeInts.InOrderEnum();
+            intPostorder = threeInts.PostOrderEnum();
+            intPreorder = threeInts.PreOrderEnum();
+            Console.WriteLine("\nPoints mass inorder:");
+            foreach (var item in intInorder)
+                Console.Write(item + " ");
+            Console.WriteLine("\nPoints mass preorder:");
+            foreach (var item in intPreorder)
+                Console.Write(item + " ");
+            Console.WriteLine("\nPoints mass postorder:");
+            foreach (var item in intPostorder)
+                Console.Write(item + " ");
+            Console.ReadKey();
         }
     }
 }
