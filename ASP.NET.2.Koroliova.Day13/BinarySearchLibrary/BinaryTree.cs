@@ -10,10 +10,6 @@ namespace BinarySearchLibrary
     public class BinaryTree<T> : IEnumerable<T>
     {
         #region Fields
-        //public T Data { get; set; }
-        //public BinaryTree<T> Left { get; set; }
-        //public BinaryTree<T> Right { get; set; }
-        //public BinaryTree<T> Parent { get; set; }
         private BinaryTreeNode<T> head; 
         public Comparer<T> comparer;
         #endregion
@@ -70,22 +66,6 @@ namespace BinarySearchLibrary
         {
             if(data==null)
                 throw new ArgumentNullException();
-            //if (node.Data==null || node.Data.Equals(data))
-            //{
-            //    Data = data;
-            //    return;
-            //}
-            //if (comparer.Compare(Data,data) > 0)
-            //{
-            //    if (Left == null) Left = new BinaryTree<T>();
-            //    Insert(data, Left, this);
-            //}
-            //else
-            //{
-            //    if (Right == null) Right = new BinaryTree<T>();
-            //    Insert(data, Right, this);
-            //}
-            
             BinaryTreeNode<T> newHead=new BinaryTreeNode<T>(data,null,null,null);
             Insert(newHead);
         }
@@ -240,19 +220,7 @@ namespace BinarySearchLibrary
         #endregion
 
         #region Private Methods
-        //private BinaryTreeNode<T> Minimum(BinaryTreeNode<T> node)
-        //{
-        //    while (node.Left != null)
-        //        node = node.Left;
-        //    return node;
-        //}
-
-        //private BinaryTreeNode<T> Maximum(BinaryTreeNode<T> node)
-        //{
-        //    while (node.Right != null)
-        //        node = node.Right;
-        //    return node;
-        //}
+        
         private IEnumerable<T> PreOrderEnum(BinaryTreeNode<T> node)
         {
             if (!ReferenceEquals(node, null))
@@ -290,12 +258,6 @@ namespace BinarySearchLibrary
         }
         #endregion
 
-        //private void Insert(BinaryTreeNode<T> newNode, T data)
-        //{
-
-        //    if(comparer.Compare(data,newNode.Data)<0)
-        //        if(newNode.Left==null) newNode.Left=new BinaryTreeNode<T>(data,);
-        //}
         private void Insert(BinaryTreeNode<T> node)
         {
             BinaryTreeNode<T> tempParent = null;
@@ -316,49 +278,7 @@ namespace BinarySearchLibrary
             else
                 tempParent.Right = node;
         }
-        //private void Insert(T data, BinaryTree<T> node, BinaryTree<T> parent)
-        //{
-        //    if (node.Data == null || comparer.Compare(node.Data, data) == 0)
-        //    {
-        //        node.Data = data;
-        //        node.Parent = parent;
-        //        return;
-        //    }
-        //    if (comparer.Compare(node.Data, data) > 0)
-        //    {
-        //        if (node.Left == null) node.Left = new BinaryTree<T>();
-        //        Insert(data, node.Left, node);
-        //    }
-        //    else
-        //    {
-        //        if (node.Right == null) node.Right = new BinaryTree<T>();
-        //        Insert(data, node.Right, node);
-        //    }
-        //}
-
-
-        //private void Insert(BinaryTreeNode<T> newNode)
-        //{
-
-        //    if (ReferenceEquals(node.Data,null) || comparer.Compare(node.Data, data.Data) == 0)
-        //    {
-        //        node.Data = data.Data;
-        //        node.Left = data.Left;
-        //        node.Right = data.Right;
-        //        node.Parent = parent;
-        //        return;
-        //    }
-        //    if (comparer.Compare(node.Data, data.Data) > 0)
-        //    {
-        //        if (node.Left == null) node.Left = new BinaryTree<T>();
-        //        Insert(data, node.Left, node);
-        //    }
-        //    else
-        //    {
-        //        if (node.Right == null) node.Right = new BinaryTree<T>();
-        //        Insert(data, node.Right, node);
-        //    }
-        //}
+       
       
         private BinSide? MeForParent(BinaryTreeNode<T> node)
         {
