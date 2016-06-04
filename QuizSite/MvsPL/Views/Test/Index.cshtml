@@ -1,0 +1,31 @@
+﻿
+@using MvsPL.Models
+@model IEnumerable<TestViewModel>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<h2> Tests </h2>
+<div>
+    @foreach (var item in Model)
+    {
+        <h3>Title of the test: @item.Title</h3>
+        <p>Category : @item.Category</p>
+        <p>Short Description : @item.ShortDescription</p>
+        <p>Time of passage : @item.TimeToComplete</p>
+        <p>Date of publication : @item.DateOfPublication</p>
+    }
+</div>
+<p>
+    @Html.ActionLink("Add new test", "Create")
+</p>
+</body>
+</html>

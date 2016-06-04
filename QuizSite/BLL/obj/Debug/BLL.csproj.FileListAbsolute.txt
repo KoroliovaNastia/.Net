@@ -1,0 +1,16 @@
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\BLL.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\BLL.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\obj\Debug\BLL.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\obj\Debug\BLL.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\DAL.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\Ninject.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\DAL.pdb
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\Ninject.xml
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\BLL.dll.config
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\BLL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
