@@ -5,8 +5,8 @@ C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\DAL\bin\Debug\EntityFramework.dll
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\DAL\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\DAL\bin\Debug\EntityFramework.xml
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\DAL\obj\Debug\DAL.dll
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\DAL\obj\Debug\DAL.pdb
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\DAL\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\DAL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

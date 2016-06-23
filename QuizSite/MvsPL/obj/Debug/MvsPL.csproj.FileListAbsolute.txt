@@ -4,7 +4,6 @@ C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\MvsPL.pdb
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\Antlr3.Runtime.dll
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\EntityFramework.dll
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\Newtonsoft.Json.dll
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\System.Web.Mvc.dll
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\System.Web.Optimization.dll
@@ -46,3 +45,11 @@ C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\Ninject.Web.Mvc.xml
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\EntityFramework.SqlServer.dll
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\EntityFramework.SqlServer.xml
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\Microsoft.Web.Helpers.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\System.Web.Helpers.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\WebMatrix.Data.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\WebMatrix.WebData.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\System.Web.Helpers.xml
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\WebMatrix.Data.xml
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\WebMatrix.WebData.xml
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\ru\System.Web.Helpers.resources.dll

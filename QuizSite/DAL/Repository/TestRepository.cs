@@ -24,7 +24,7 @@ namespace DAL.Repository
             return db.Tests;
         }
 
-        public Test Get(int id)
+        public Test Get(int? id)
         {
             return db.Tests.Find(id);
         }

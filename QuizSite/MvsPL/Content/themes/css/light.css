@@ -1,0 +1,115 @@
+/*body {
+	background-image:url(~/Content/themes/css/images/pattern.jpg);
+	background-repeat: no-repeat;
+}*/
+
+#wrapper {
+	width:100%;
+	margin:0 auto;
+	margin-top:-8%;
+	height:68px;
+	z-index: 6;
+}
+
+.lightmenu {
+    display: block;
+	position: absolute;
+	width:100%;
+	height:62px;
+	background: transparent;
+	background-image:url(~/Content/themes/css/images/light.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	clear:both;
+	top:320px;
+	z-index: 6;
+    -moz-min-width:700px;
+    -ms-min-width:700px;
+    -o-min-width:700px;
+    -webkit-min-width:700px;
+    min-width:700px;
+}
+
+.lightmenu ul li {
+	float: left;
+	list-style: none;
+	width: 110px;
+	height:52px;
+	background-image:url(~/Content/themes/css/images/sep.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	position: relative;
+	top:9px;
+}
+
+.lightmenu ul ul {
+	width:108px;
+	border:1px solid #575757;
+	background-color:#E8E8E8  ;
+	position:absolute;
+	top: 52px;
+	left:-2px;
+	display:none;
+
+}
+
+.lightmenu ul ul li{
+	float: none;
+	border-bottom:1px solid #575757;
+	top:2px;
+}
+.lightmenu ul ul li a{
+top:15px;
+height: 20px;
+}
+.lightmenu li.back {
+	background-image:url(~/Content/themes/css/images/green.png);
+	background-repeat: no-repeat;
+	width: 44px;
+	margin-left:-585px;
+	height: 19px;
+	z-index: 8;
+	position: relative;
+	margin-top:-2px;
+}
+
+
+.lightmenu li a {
+	font-size: 16px ;
+	font-family:"Myriad Pro", sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	width:106px;
+	color: #575757;
+	outline: none;
+	text-align: center;
+	letter-spacing: 0;
+	z-index: 10;
+	display: block;
+	float: left;
+	top:19px;
+	height: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.lightmenu li a:hover{
+	color:#2c2c2c;
+}
+
+.searchbox {
+	width:197px;
+	float:right;
+	margin-right:20px;
+}
+
+.searchbox input.lightsearch {
+	background: url(~/Content/themes/css/images/lightsearch.png) no-repeat;
+	border: 0;
+	width: 170px; /* width of text-display area */
+	padding: 2px 5px 2px 24px;
+	font-size: 11px;
+	color: #575757;
+	margin-top:24px;
+	height: 19px; /* height of text-display area */
+}

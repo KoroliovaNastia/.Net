@@ -19,9 +19,14 @@ namespace BLL.Services
         {
             Database = uow;
         }
-        public TestDTO GetTest(int id)
+        public TestDTO GetTest(int? id)
         {
             return Database.Tests.Get(id).ToTestDto();
+        }
+
+        public QuestionDTO GetQuestion(int id)
+        {
+            return Database.Questions.Get(id).ToQuestionDto();
         }
 
         public IEnumerable<TestDTO> GetTests()
@@ -38,6 +43,7 @@ namespace BLL.Services
         public void CreateNewTest(TestDTO newTset)
         {
             Database.Tests.Create(newTset.ToTest());
+            Database.Save();
         }
 
 

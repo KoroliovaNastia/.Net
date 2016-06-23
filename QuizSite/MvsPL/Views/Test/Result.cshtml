@@ -1,0 +1,15 @@
+﻿@model ICollection<MvsPL.Models.AnswerViewModel>
+<h2>Results</h2>
+@*<p>
+    Test title: <b></b>
+</p>*@
+
+@foreach (var item in Model)
+{
+    @*<p>
+        Question # @item.Id: @item.Question.Formulation
+    </p>*@
+    <p>
+        @item.Text
+    </p>
+}

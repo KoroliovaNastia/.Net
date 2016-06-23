@@ -11,6 +11,10 @@ namespace DAL.Interfaces
     public interface IUnitOfWork:IDisposable
     {
         IRepository<Test> Tests { get; }
+        IRepository<Question> Questions { get; }
+        IRepository<User> Users { get; }
+        IRepository<Role> Roles { get; }
+        IRepository<Profile> Profiles { get; }
         void Save();
     }
 }

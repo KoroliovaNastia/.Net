@@ -35,5 +35,124 @@ namespace MvsPL.Infrastructure
 
             };
         }
+
+        public static QuestionDTO ToBllQuestion(this QuestionViewModel question)
+        {
+            return new QuestionDTO()
+            {
+                TestDtoId = question.TestViewModelId,
+                Id = question.Id,
+                Formulation = question.Formulation,
+                SelectedAnswer = question.SelectedAnswer,
+                TrueAnswer = ToBllAnswers(question.TrueAnswer)
+            };
+        }
+
+        public static QuestionViewModel ToMvsQuestion(this QuestionDTO question)
+        {
+            return new QuestionViewModel()
+            {
+                TestViewModelId = question.TestDtoId,
+                Id = question.Id,
+                Formulation = question.Formulation,
+                SelectedAnswer = question.SelectedAnswer,
+                TrueAnswer = ToMvsAnswers(question.TrueAnswer)
+            };
+        }
+
+        public static AnswersDTO ToBllAnswers(this AnswerViewModel answers)
+        {
+            return new AnswersDTO()
+            {
+                Id = answers.Id,
+                Question = ToBllQuestion(answers.Question),
+                QuestionId = answers.QuestionId,
+                Text = answers.Text
+            };
+        }
+
+        public static AnswerViewModel ToMvsAnswers(this AnswersDTO answers)
+        {
+            return new AnswerViewModel()
+            {
+                Id = answers.Id,
+                Question = ToMvsQuestion(answers.Question),
+                QuestionId = answers.QuestionId,
+                Text = answers.Text
+            };
+        }
+
+        public static UserDTO ToBllUser(this UserViewModel user)
+        {
+            return new UserDTO()
+            {
+                Id = user.Id,
+                Email = user.Email,
+                CreationDate = user.CreationDate,
+                Password = user.Password,
+                //Role = ToBllRole(user.Role),
+                RoleId = user.RoleId
+
+            };
+        }
+
+        public static UserViewModel ToMvsUser(this UserDTO user)
+        {
+            return new UserViewModel()
+            {
+                Id = user.Id,
+                Email = user.Email,
+                CreationDate = user.CreationDate,
+                Password = user.Password,
+                //Role = ToMvsRole(user.Role),
+                RoleId = user.RoleId
+            };
+        }
+
+        public static RoleDTO ToBllRole(this RoleViewModel role)
+        {
+            return new RoleDTO()
+            {
+                Id = role.Id,
+                Name = role.Name
+            };
+        }
+
+        public static RoleViewModel ToMvsRole(this RoleDTO role)
+        {
+            return new RoleViewModel()
+            {
+                Id = role.Id,
+                Name = role.Name
+            };
+        }
+
+        public static ProfileDTO ToBllProfile(this ProfileViewModel profile)
+        {
+            return new ProfileDTO()
+            {
+                Age = profile.Age,
+                FirstName = profile.FirstName,
+                Id = profile.Id,
+                LastName = profile.LastName,
+                LastUpdateDate = profile.LastUpdateDate,
+                UserId = profile.UserId,
+                User = ToBllUser(profile.User)
+            };
+        }
+
+        public static ProfileViewModel ToMvsProfile(this ProfileDTO profile)
+        {
+            return new ProfileViewModel()
+            {
+                Age = profile.Age,
+                FirstName = profile.FirstName,
+                Id = profile.Id,
+                LastName = profile.LastName,
+                LastUpdateDate = profile.LastUpdateDate,
+                UserId = profile.UserId,
+                User = ToMvsUser(profile.User)
+            };
+        }
     }
 }

@@ -1,0 +1,15 @@
+﻿@model MvsPL.Models.QuestionViewModel
+<div>
+@Html.HiddenFor(x => x.Id)
+    <p>
+        Question # @Model.Id: @Model.Formulation
+    </p>
+@foreach (var item in Model.Answers)
+{
+    <p>
+        @Html.RadioButtonFor(b => b.SelectedAnswer, item.Text) @item.Text
+    </p>
+}
+    @*<input type="button" id="getPeople" value="Get People" />*@
+    <a class="btn btn-primary" onclick="location.href='@Url.Action("Create", "Test")'" role="button">Next &raquo;</a>
+</div>

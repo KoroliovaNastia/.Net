@@ -1,0 +1,85 @@
+.darkmenu {
+	width:960px;
+	height:62px;
+	background: transparent;
+	background-image:url(~/Content/themes/css/images/dark.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin:0 auto;
+	clear:both;
+	margin-bottom:60px;
+}
+.darkGreen {
+	position: relative;
+	height: 62px;
+	width: 700px;
+	overflow: hidden;
+	float:left;
+}
+.darkGreen li{
+	float: left;
+	list-style: none;
+	width: 110px;
+	height:52px;
+	background-image:url(~/Content/themes/css/images/darksep.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	position: relative;
+	top:9px;
+}
+
+
+.darkGreen li.back {
+	background-image:url(~/Content/themes/css/images/darkgreen.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 45px;
+	margin-left:-3px;
+	height: 20px;
+	z-index: 8;
+	top:5px;
+	position: absolute;
+}
+
+
+
+
+.darkGreen li a{
+	font-size: 16px ;
+	font-family:"Myriad Pro", sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	width:110px;
+	color: #d8d8d8;
+	outline: none;
+	text-align: center;
+	letter-spacing: 0;
+	z-index: 10;
+	display: block;
+	float: left;
+	top:18px;
+	height: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.darkGreen li a:hover{
+	color:#fff;
+}
+
+.searchbox {
+	width:197px;
+	float:right;
+	margin-right:20px;
+}
+
+.searchbox input.darksearch {
+	background: url(~/Content/themes/css/images/darksearch.png) no-repeat;
+	border: 0;
+	width: 170px; /* width of text-display area */
+	padding:2px 5px 2px 24px;
+	font-size: 11px;
+	color: #d8d8d8;
+	margin-top:23px;
+	height: 19px; /* height of text-display area */
+}

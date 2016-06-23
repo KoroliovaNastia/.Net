@@ -1,0 +1,44 @@
+﻿
+@model MvsPL.Models.TestViewModel
+<script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+
+</script>
+<script type="text/javascript">
+    $.ajax('/jquery/submitData', {
+        type: 'POST',  // http method
+        data: { myData: 'This is my data.' },  // data to submit
+        success: function (data, status, xhr) {
+            $('p').append('status: ' + status + ', data: ' + data);
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('p').append('Error' + errorMessage);
+        }
+    });
+    </script>
+    <body>
+        @using (Html.BeginForm())
+    {
+        <fieldset>
+                <h3>Title of the test: @Model.Title</h3>
+                @*@Html.EditorFor(x => x.Questions)*@
+                @*<p>@Model.Questions.GetQuestion()</p>*@
+                @*<input class="text-box single-line" id="QuestionId"
+                   name="Question" type="text" value="1"/>*@
+                @*@foreach (var item in Model.Questions)
+            {
+                @item
+
+            }*@
+                @Html.Submit("Result")
+            </fieldset>
+
+        @*<fieldset>
+                @Html.RenderPartial()
+            </fieldset>
+        //<input type="button" id="mybtn" value="Get Item" onclick="document.getElementById('1').style.color = 'blue'"/>*@
+    <input type="button" id="ajaxBtn" value="Send Ajax request" /><input type="button" id="ajaxBtn" value="Send Ajax request" />
+    }
+
+
+    </body>

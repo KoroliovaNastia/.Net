@@ -11,6 +11,10 @@ namespace DAL.EF
     public class QuizContext:DbContext
     {
         public DbSet<Test> Tests { get; set; }
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<Profile> Profiles { get; set; }
 
         static QuizContext()
         {
@@ -29,7 +33,8 @@ namespace DAL.EF
                 Category = "Philosophy",
                 ShortDescription = "Not found",
                 TimeToComplete = TimeSpan.FromMinutes(20),
-                DateOfPublication = DateTime.Now});
+                DateOfPublication = DateTime.Now,
+                Question = new List<Question>()});
                 db.SaveChanges();
             }
         }

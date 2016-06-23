@@ -1,0 +1,172 @@
+﻿@{
+    ViewBag.Title = "MyHome";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    @Scripts.Render("~/bundles/myscripts")
+    @Styles.Render("~/Content/themes/css/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @*@Styles.Render("~/Content/themes/*")*@
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="~/Content/themes/css/reset.css" type="text/css"  />
+    <link rel="stylesheet" href="~/Content/themes/css/light.css" type="text/css"  />
+    <script type="text/javascript" src="~/Scripts/MyScripts/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/MyScripts/jquery.lavalamp.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/MyScripts/jquery.dropmenu.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="~/Content/themes/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/themes/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/themes/css/elastislide.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+</head>
+<body>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#menu").lavaLamp({
+                fx: "backout",
+                speed: 700,
+                click: function (event, menuItem) {
+                    return false;
+                }
+            });
+        });
+    </script>
+
+    <header>
+        <a href="http://www.mail.ru"><span>&laquo; My Email: </span>K.Nastia.san@mail.ru <span>&raquo;</span></a>
+        <span class="right_ab">
+            <a href="#" target="_blank">More GAME</a>
+            <a href="#">More PAZZLE</a>
+            <a href="#"><strong>And QUIZ</strong></a>
+        </span>
+        <div class="clr"></div>
+    </header><!-- header -->
+    }
+    
+    <div class="ob1">
+        <table height="300px" width="300px" style="margin-left: 40px;">
+            <tr>
+                @*<th align="center"><img src="~/Content/themes/css/images/images.jpg" id="logo"></th>*@
+            </tr>
+        </table>
+        @*<div style="float:right; margin-bottom:20px;"><p>My phone:velcom +375(44)XXX-XX-XX</p></div>*@
+    </div>
+
+
+    <div id="wrapper">
+        <div class="lightmenu">
+            <ul id="menu">
+                <li class="current"><a href="MyHome.cshtml">Home</a></li>
+                <li><a id="btn1" href="#" value="btn1">About</a></li>
+                <li><a id="btn2" href="#" value="btn2">Portfolio</a></li>
+                <li><a id="btn3" href="#" value="btn3">Contact</a></li>
+                <li>
+                    <a id="btn8" href="#">Tasks</a>
+                    <ul>
+                        <li><a id="btn4" href="#" value="btn4.1">PHP 1</a></li>
+                        <li><a id="btn5" href="#" value="btn4.2">PHP 2</a></li>
+                        <li><a id="btn6" href="#" value="btn4.3">PHP 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--<div class="searchbox">
+                <form method="get" action="">
+                    <input type="text" value="" onfocus="doClear(this)" name="s" class="lightsearch"/>
+                </form>
+            </div>-->
+        </div>
+
+    </div>
+    @RenderBody()
+    <div id="content">
+        <h1>
+            Проблем не существует. Все в мире является головоломкой, а у каждой головоломки есть решение
+        </h1>
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $('#btn1').click(function () {
+                $.ajax({
+                    url: "page4.1.html",
+                    cache: false,
+                    success: function (html) {
+                        $("#content").html(html);
+                    }
+                });
+            });
+
+
+            $('#btn1').click(function () {
+                $.ajax({
+                    url: "page4.1.html",
+                    cache: false,
+                    success: function (html) {
+                        $("#content").html(html);
+                    }
+                });
+            });
+
+            $('#btn2').click(function () {
+                $.ajax({
+                    url: "page2.html",
+                    cache: false,
+                    success: function (html) {
+                        $("#content").html(html);
+                    }
+                });
+            });
+
+
+            $('#btn3').click(function () {
+                $.ajax({
+                    url: "example.html",
+                    cache: false,
+                    success: function (html) {
+                        $("#content").html(html);
+                    }
+                });
+            });
+            $('#btn4').click(function () {
+                $.ajax({
+                    url: "page4.1.html",
+                    cache: true,
+                    success: function (html) {
+                        $("#content").html(html);
+                    }
+                });
+
+            });
+            $('#btn5').click(function () {
+                $.ajax({
+                    url: "page4.2.html",
+                    cache: false,
+                    success: function (html) {
+                        $("#content").html(html);
+                    }
+                });
+            });
+            $('#btn6').click(function () {
+                $.ajax({
+                    url: "page4.3.html",
+                    cache: false,
+                    success: function (html) {
+                        $("#content").html(html);
+                    }
+                });
+            });
+
+        });
+    </script>
+
+    <footer>
+        <p>Koroliova Anastasia</p>
+    </footer>
+</body>
+</html>

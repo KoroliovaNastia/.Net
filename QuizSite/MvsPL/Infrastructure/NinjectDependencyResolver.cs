@@ -33,7 +33,7 @@ namespace MvsPL.Infrastructure
         private void AddBinding()
         {
             kernel.Bind<ITestService>().To<TestService>();
-
+            kernel.Bind<IUserService>().To<UserService>();
         }
     }
 }

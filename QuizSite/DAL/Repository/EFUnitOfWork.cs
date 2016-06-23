@@ -13,7 +13,10 @@ namespace DAL.Repository
     {
         private QuizContext db;
         private TestRepository testRepository;
-
+        private QuestionRepository questionRepository;
+        private UserRepository userRepository;
+        private RoleRepository roleRepository;
+        private ProfileRepository profileRepository;
         public EFUnitOfWork(string connectionString)
         {
             db=new QuizContext(connectionString);
@@ -25,6 +28,44 @@ namespace DAL.Repository
                 if(testRepository==null)
                     testRepository=new TestRepository(db);
                 return testRepository;
+            }
+        }
+
+        public IRepository<Question> Questions
+        {
+            get
+            {
+                if (questionRepository == null)
+                    questionRepository = new QuestionRepository(db);
+                return questionRepository;
+            }
+        }
+        public IRepository<User> Users
+        {
+            get
+            {
+                if (userRepository == null)
+                    userRepository = new UserRepository(db);
+                return userRepository;
+            }
+        }
+        public IRepository<Role> Roles
+        {
+            get
+            {
+                if (roleRepository == null)
+                    roleRepository = new RoleRepository(db);
+                return roleRepository;
+            }
+        }
+
+        public IRepository<Profile> Profiles
+        {
+            get
+            {
+                if (profileRepository == null)
+                    profileRepository = new ProfileRepository(db);
+                return profileRepository;
             }
         }
 

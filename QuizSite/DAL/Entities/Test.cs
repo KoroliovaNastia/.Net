@@ -10,17 +10,19 @@ namespace DAL.Entities
 {
     public class Test
     {
+
         [Required]
         public int Id { get; set; }
         public int TestId { get; set; }
-        [Required, ConcurrencyCheck,MaxLength(20)]
+        [Required(ErrorMessage = "Please, enter the title of new test."), ConcurrencyCheck, MaxLength(20, ErrorMessage = "You title longer than 20 symbols.")]
         public string Title { get; set; }
         public string ShortDescription { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Please, enter the time to complete of the test.")]
         public TimeSpan TimeToComplete { get; set; }
         public DateTime DateOfPublication { get; set; }
-        [Required, ConcurrencyCheck]
+        [Required(ErrorMessage = "Please, check the category of you test or  add new."), ConcurrencyCheck]
         public string Category { get; set; }
-       
+
+        public virtual ICollection<Question> Question { get; set; }
     }
 }

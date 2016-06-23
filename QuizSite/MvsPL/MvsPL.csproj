@@ -8,7 +8,7 @@
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{0EBC5C42-EA6B-4702-A6C3-A74407A6E196}</ProjectGuid>
-    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MvsPL</RootNamespace>
@@ -48,6 +48,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebHelpers.3.2.3\lib\net45\Microsoft.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
@@ -69,6 +73,30 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -81,10 +109,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -102,31 +126,11 @@
     <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Providers">
       <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
@@ -140,6 +144,14 @@
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.3\lib\net45\WebMatrix.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.3.2.3\lib\net45\WebMatrix.WebData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -147,20 +159,39 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\CaptchaImage.cs" />
+    <Compile Include="Infrastructure\CustomHtmlHelpers.cs" />
     <Compile Include="Infrastructure\MvsMappers.cs" />
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
+    <Compile Include="Models\AnswerViewModel.cs" />
+    <Compile Include="Models\LogOnViewModel.cs" />
+    <Compile Include="Models\ProfileViewModel.cs" />
+    <Compile Include="Models\QuestionViewModel.cs" />
+    <Compile Include="Models\RegisterViewModel.cs" />
+    <Compile Include="Models\RoleViewModel.cs" />
     <Compile Include="Models\TestViewModel.cs" />
+    <Compile Include="Models\UserAnswers.cs" />
+    <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\CustomMembershipProvider.cs" />
+    <Compile Include="Providers\CustomProfileProvider.cs" />
+    <Compile Include="Providers\CustomRoleProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\dbQuiz.mdf" />
-    <Content Include="App_Data\dbQuiz_log.ldf">
-      <DependentUpon>dbQuiz.mdf</DependentUpon>
-    </Content>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\carousel.css" />
+    <Content Include="Content\themes\css\dark.css" />
+    <Content Include="Content\themes\css\light.css" />
+    <Content Include="Content\themes\css\stylesheet.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -215,11 +246,115 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\css\demo.css" />
+    <Content Include="Content\themes\css\elastislide.css" />
+    <Content Include="Content\themes\css\images\1.jpg" />
+    <Content Include="Content\themes\css\images\10.jpg" />
+    <Content Include="Content\themes\css\images\11.jpg" />
+    <Content Include="Content\themes\css\images\12.jpg" />
+    <Content Include="Content\themes\css\images\2.jpg" />
+    <Content Include="Content\themes\css\images\3.jpg" />
+    <Content Include="Content\themes\css\images\4.jpg" />
+    <Content Include="Content\themes\css\images\5.jpg" />
+    <Content Include="Content\themes\css\images\6.jpg" />
+    <Content Include="Content\themes\css\images\7.jpg" />
+    <Content Include="Content\themes\css\images\8.jpg" />
+    <Content Include="Content\themes\css\images\9.jpg" />
+    <Content Include="Content\themes\css\images\ajax-loader.gif" />
+    <Content Include="Content\themes\css\images\Bankoboev.Ru_mehanizm_chasov_shesterenki.jpg" />
+    <Content Include="Content\themes\css\images\banners\index.html" />
+    <Content Include="Content\themes\css\images\banners\osmbanner1.png" />
+    <Content Include="Content\themes\css\images\banners\osmbanner2.png" />
+    <Content Include="Content\themes\css\images\banners\shop-ad-books.jpg" />
+    <Content Include="Content\themes\css\images\banners\shop-ad.jpg" />
+    <Content Include="Content\themes\css\images\banners\white.png" />
+    <Content Include="Content\themes\css\images\black.png" />
+    <Content Include="Content\themes\css\images\dark.png" />
+    <Content Include="Content\themes\css\images\darkgreen.png" />
+    <Content Include="Content\themes\css\images\darksearch.png" />
+    <Content Include="Content\themes\css\images\darksep.png" />
+    <Content Include="Content\themes\css\images\green.png" />
+    <Content Include="Content\themes\css\images\headers\blue-flower.jpg" />
+    <Content Include="Content\themes\css\images\headers\index.html" />
+    <Content Include="Content\themes\css\images\headers\maple.jpg" />
+    <Content Include="Content\themes\css\images\headers\raindrops.jpg" />
+    <Content Include="Content\themes\css\images\headers\walden-pond.jpg" />
+    <Content Include="Content\themes\css\images\headers\windows.jpg" />
+    <Content Include="Content\themes\css\images\ImageAttribution.txt" />
+    <Content Include="Content\themes\css\images\images.jpg" />
+    <Content Include="Content\themes\css\images\index.html" />
+    <Content Include="Content\themes\css\images\joomla_black.gif" />
+    <Content Include="Content\themes\css\images\joomla_green.gif" />
+    <Content Include="Content\themes\css\images\joomla_logo_black.jpg" />
+    <Content Include="Content\themes\css\images\light.jpg" />
+    <Content Include="Content\themes\css\images\light.png" />
+    <Content Include="Content\themes\css\images\lightsearch.png" />
+    <Content Include="Content\themes\css\images\nav.png" />
+    <Content Include="Content\themes\css\images\nav_thumbs.png" />
+    <Content Include="Content\themes\css\images\pattern.jpg" />
+    <Content Include="Content\themes\css\images\pattern.png" />
+    <Content Include="Content\themes\css\images\powered_by.png" />
+    <Content Include="Content\themes\css\images\sampledata\fruitshop\apple.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\fruitshop\bananas_2.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\fruitshop\fruits.gif" />
+    <Content Include="Content\themes\css\images\sampledata\fruitshop\index.html" />
+    <Content Include="Content\themes\css\images\sampledata\fruitshop\tamarind.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\index.html" />
+    <Content Include="Content\themes\css\images\sampledata\parks\animals\180px_koala_ag1.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\animals\180px_wobbegong.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\animals\200px_phyllopteryx_taeniolatus1.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\animals\220px_spottedquoll_2005_seanmcclean.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\animals\789px_spottedquoll_2005_seanmcclean.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\animals\800px_koala_ag1.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\animals\800px_phyllopteryx_taeniolatus1.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\animals\800px_wobbegong.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\animals\index.html" />
+    <Content Include="Content\themes\css\images\sampledata\parks\banner_cradle.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\index.html" />
+    <Content Include="Content\themes\css\images\sampledata\parks\landscape\120px_pinnacles_western_australia.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\landscape\120px_rainforest_bluemountainsnsw.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\landscape\180px_ormiston_pound.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\landscape\250px_cradle_mountain_seen_from_barn_bluff.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\landscape\727px_rainforest_bluemountainsnsw.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\landscape\800px_cradle_mountain_seen_from_barn_bluff.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\landscape\800px_ormiston_pound.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\landscape\800px_pinnacles_western_australia.jpg" />
+    <Content Include="Content\themes\css\images\sampledata\parks\landscape\index.html" />
+    <Content Include="Content\themes\css\images\sampledata\parks\parks.gif" />
+    <Content Include="Content\themes\css\images\sep.png" />
+    <Content Include="Content\themes\css\images\thumbs\1.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\10.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\11.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\12.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\2.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\3.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\4.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\5.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\6.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\7.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\8.jpg" />
+    <Content Include="Content\themes\css\images\thumbs\9.jpg" />
+    <Content Include="Content\themes\css\images\views.png" />
+    <Content Include="Content\themes\css\reset.css" />
+    <Content Include="Content\themes\css\style.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.8.2.js" />
-    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Content\themes\css\images\.DS_Store" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
@@ -232,6 +367,16 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\MyScripts\cufon.yui.js" />
+    <Content Include="Scripts\MyScripts\gallery.js" />
+    <Content Include="Scripts\MyScripts\jquery-1.4.min.js" />
+    <Content Include="Scripts\MyScripts\jquery.dropmenu.js" />
+    <Content Include="Scripts\MyScripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\MyScripts\jquery.easing.min.js" />
+    <Content Include="Scripts\MyScripts\jquery.elastislide.js" />
+    <Content Include="Scripts\MyScripts\jquery.lavalamp.min.js" />
+    <Content Include="Scripts\MyScripts\jquery.tmpl.min.js" />
+    <Content Include="Scripts\MyScripts\myriad.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -242,14 +387,28 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Test\Create.cshtml" />
+    <Content Include="Views\Shared\MyHome.cshtml" />
+    <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\Test\PassTest.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\QuestionViewModel.cshtml" />
+    <Content Include="Views\Test\Result.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\UsersEdit.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
