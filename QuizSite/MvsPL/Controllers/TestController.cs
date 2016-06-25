@@ -17,15 +17,26 @@ namespace MvsPL.Controllers
         {
             testService = service;
         }
-
+        
         public ActionResult Index()
         {
-            return View(testService.GetTests().Select(user => user.ToMvcTest()));
+            return View();
         }
-
-        public ActionResult Home()
+        [HttpGet]
+        public ActionResult GetTest()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult GetTest(int? id)
+        {
+            return View(testService.GetTest(id).ToMvcTest());
+        }
+
+        public ActionResult AllTests()
+        {
+            return View(testService.GetTests().Select(user => user.ToMvcTest()));
         }
 
         //protected override void Dispose(bool disposing)
@@ -34,6 +45,7 @@ namespace MvsPL.Controllers
         //    base.Dispose(disposing);
         //}
         [HttpGet]
+        [Authorize(Roles = "Administrator")]
         public ActionResult Create()
         {
             return View();
@@ -50,6 +62,7 @@ namespace MvsPL.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public ActionResult PassTest()
         {
 

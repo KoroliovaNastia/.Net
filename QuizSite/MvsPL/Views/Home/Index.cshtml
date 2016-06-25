@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<MvsPL.Models.UserViewModel>
 @{
-    ViewBag.Title = "Home";
+    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -34,7 +34,9 @@
                 </td>*@
         </tr>
     }
-
+     @*@Html.ActionLink("Home", "About", "Home") @Html.Partial("_LoginPartial")*@
+    
+    @Html.ActionLink("UserEdit", "UsersEdit").If(User.IsInRole("Administrator"))
 </table>
 
     

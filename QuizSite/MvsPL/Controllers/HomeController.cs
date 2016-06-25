@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BLL.Interfaces;
+using MvsPL.Infrastructure;
 using MvsPL.Models;
 
 namespace MvsPL.Controllers
@@ -18,16 +19,11 @@ namespace MvsPL.Controllers
             userService = repository;
         }
 
-        public ActionResult Home()
+        public ActionResult Index()
         {
-            var model = userService.GetUsers().Select(u => new UserViewModel()
-            {
-                Email = u.Email,
-                CreationDate = u.CreationDate,
-                Role = u.Role.Name
-            });
+            //var model = userService.GetUsers().Select(u => u.ToMvsUser());
 
-            return View(model);
+            return View(userService.GetUsers().Select(u => u.ToMvsUser()));
         }
 
         public ActionResult About()
@@ -51,16 +47,24 @@ namespace MvsPL.Controllers
         [Authorize(Roles = "Administrator")]
         public ActionResult UsersEdit()
         {
-            var model = userService.GetUsers().Select(u => new UserViewModel
-            {
-                Email = u.Email,
-                CreationDate = u.CreationDate,
-                Role = u.Role.Name
-            });
+            //var model = userService.GetUsers().Select(u => new UserViewModel
+            //{
+            //    Email = u.Email,
+            //    CreationDate = u.CreationDate,
+            //    Role = u.Role.Name
+            //});
 
-            return View(model);
+            return View(userService.GetUsers().Select(u => u.ToMvsUser())); 
         }
 
+        public ActionResult Details(int? id = 0)
+        {
+            return View(userService.GetUser(id).ToMvsUser());
+        }
 
+        public ActionResult Delete(int? id = 0)
+        {
+            return View(userService.GetUser(id).ToMvsUser());
+        }
     }
 }

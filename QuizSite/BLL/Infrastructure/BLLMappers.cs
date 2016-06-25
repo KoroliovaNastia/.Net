@@ -12,6 +12,8 @@ namespace BLL.Infrastructure
     {
         public static TestDTO ToTestDto(this Test test)
         {
+            if (test == null)
+                return null;
             return new TestDTO()
             {
                 Category = test.Category,
@@ -19,7 +21,7 @@ namespace BLL.Infrastructure
                 Id=test.Id,
                 ShortDescription = test.ShortDescription,
                 TimeToComplete = test.TimeToComplete,
-                Title = test.Title,
+                Title = test.Title
             };
         }
 
@@ -38,6 +40,8 @@ namespace BLL.Infrastructure
 
         public static QuestionDTO ToQuestionDto(this Question question)
         {
+            if (question == null)
+                return null;
             return new QuestionDTO()
             {
                 TestDtoId=question.TestId,
@@ -62,10 +66,12 @@ namespace BLL.Infrastructure
 
         public static AnswersDTO ToAnswersDto(this Answers answers)
         {
+            if (answers == null)
+                return null;
             return new AnswersDTO()
             {
                 Id = answers.Id,
-                Question = ToQuestionDto(answers.Question),
+                //Question = ToQuestionDto(answers.Question),
                 QuestionId = answers.QuestionId,
                 Text = answers.Text
             };
@@ -76,7 +82,7 @@ namespace BLL.Infrastructure
             return new Answers()
             {
                 Id = answers.Id,
-                Question = ToQuestion(answers.Question),
+                //Question = ToQuestion(answers.Question),
                 QuestionId = answers.QuestionId,
                 Text = answers.Text
             };
@@ -84,6 +90,8 @@ namespace BLL.Infrastructure
 
         public static UserDTO ToUserDto(this User user)
         {
+            if (user == null)
+                return null;
             return new UserDTO()
             {
                 Id = user.Id,
@@ -111,6 +119,8 @@ namespace BLL.Infrastructure
 
         public static RoleDTO ToRoleDto(this Role role)
         {
+            if (role == null)
+                return null;
             return new RoleDTO()
             {
                 Id = role.Id,
@@ -129,6 +139,8 @@ namespace BLL.Infrastructure
 
         public static ProfileDTO ToProfileDto(this Profile profile)
         {
+            if (profile == null)
+                return null;
             return new ProfileDTO()
             {
                 Age = profile.Age,
@@ -137,7 +149,7 @@ namespace BLL.Infrastructure
                 LastName = profile.LastName,
                 LastUpdateDate = profile.LastUpdateDate,
                 UserId = profile.UserId,
-                User = ToUserDto(profile.User)
+               // User = ToUserDto(profile.User)
             };
         }
 
@@ -151,7 +163,7 @@ namespace BLL.Infrastructure
                 LastName = profile.LastName,
                 LastUpdateDate = profile.LastUpdateDate,
                 UserId = profile.UserId,
-                User = ToUser(profile.User)
+               // User = ToUser(profile.User)
             };
         }
     }

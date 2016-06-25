@@ -8,6 +8,6 @@ namespace MvsPL.Models
     public class UserAnswers
     {
         public ICollection<AnswerViewModel> MyAnswers { get; set; }
-        public int Count { get; set; }
+       // public int Count { get; set; }
     }
 }

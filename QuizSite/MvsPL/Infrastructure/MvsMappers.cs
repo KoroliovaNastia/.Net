@@ -90,7 +90,7 @@ namespace MvsPL.Infrastructure
                 Email = user.Email,
                 CreationDate = user.CreationDate,
                 Password = user.Password,
-                //Role = ToBllRole(user.Role),
+                //Role = new RoleDTO{Name=user.Role},
                 RoleId = user.RoleId
 
             };
@@ -104,8 +104,9 @@ namespace MvsPL.Infrastructure
                 Email = user.Email,
                 CreationDate = user.CreationDate,
                 Password = user.Password,
-                //Role = ToMvsRole(user.Role),
+                Role = user.Role.Name,
                 RoleId = user.RoleId
+
             };
         }
 

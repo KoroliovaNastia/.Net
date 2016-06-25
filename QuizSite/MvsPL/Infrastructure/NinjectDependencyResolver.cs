@@ -34,6 +34,7 @@ namespace MvsPL.Infrastructure
         {
             kernel.Bind<ITestService>().To<TestService>();
             kernel.Bind<IUserService>().To<UserService>();
+            kernel.Bind<IRoleService>().To<RoleService>();
         }
     }
 }

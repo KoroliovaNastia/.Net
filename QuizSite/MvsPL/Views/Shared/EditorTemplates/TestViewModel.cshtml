@@ -1,0 +1,11 @@
+﻿@model MvsPL.Models.TestViewModel
+
+<div>
+    @Html.HiddenFor(x => x.Id)
+
+    <h3>Title of the test: @Model.Title</h3>
+    <p>Category : @Model.Category</p>
+    <p>Short Description : @Model.ShortDescription</p>
+    <p>Time of passage : @Model.TimeToComplete</p>
+    <p>Date of publication : @Model.DateOfPublication</p>
+</div>

@@ -11,9 +11,9 @@ namespace MvsPL.Models
         [ScaffoldColumn(false)]
         public int Id { get; set; }
 
-        [Required]
-        [Display(Name = "Логин")]
-        public string UserName { get; set; }
+        //[Required]
+        //[Display(Name = "Логин")]
+        //public string UserName { get; set; }
 
         [Display(Name = "Enter your e-mail")]
         [Required(ErrorMessage = "The field can not be empty!")]

@@ -15,21 +15,36 @@
             $('p').append('Error' + errorMessage);
         }
     });
+    $(document).ready(function() {
+
+        $('#ajaxBtn').click(function () {
+            $.ajax({
+                url: "Result.cshtml",
+                type:'POST',
+                cache: false,
+                success: function(cshtml) {
+                    $("p").cshtml(cshtml);
+                }
+            });
+        });
+    });
     </script>
     <body>
         @using (Html.BeginForm())
     {
         <fieldset>
                 <h3>Title of the test: @Model.Title</h3>
-                @*@Html.EditorFor(x => x.Questions)*@
+            @Html.EditorFor(x => x.Questions)
+            @*<p>@Model.Questions.First()</p>*@
                 @*<p>@Model.Questions.GetQuestion()</p>*@
                 @*<input class="text-box single-line" id="QuestionId"
                    name="Question" type="text" value="1"/>*@
-                @*@foreach (var item in Model.Questions)
+            @*@foreach (var item in Model.Questions)
             {
                 @item
 
             }*@
+
                 @Html.Submit("Result")
             </fieldset>
 
@@ -37,7 +52,7 @@
                 @Html.RenderPartial()
             </fieldset>
         //<input type="button" id="mybtn" value="Get Item" onclick="document.getElementById('1').style.color = 'blue'"/>*@
-    <input type="button" id="ajaxBtn" value="Send Ajax request" /><input type="button" id="ajaxBtn" value="Send Ajax request" />
+    <input type="button" id="ajaxBtn" value="Send Ajax request" />
     }
 
 

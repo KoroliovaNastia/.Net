@@ -8,7 +8,7 @@ namespace MvsPL.Models
 {
     public class UserViewModel
     {
-        public int Id { get; set; }
+       public int Id { get; set; }
 
         [Display(Name = "User's e-mail")]
         public string Email { get; set; }

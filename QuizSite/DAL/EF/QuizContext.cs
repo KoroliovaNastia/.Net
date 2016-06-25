@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL.Entities;
+using System.Web.Helpers;
 
 namespace DAL.EF
 {
@@ -35,6 +36,20 @@ namespace DAL.EF
                 TimeToComplete = TimeSpan.FromMinutes(20),
                 DateOfPublication = DateTime.Now,
                 Question = new List<Question>()});
+                
+
+                db.Roles.Add(new Role {Name = "User"});
+                db.Roles.Add(new Role {Name = "Administrator" });
+               
+
+                db.Users.Add(new User
+                {
+                    Id=1,
+                    Email = "K.Nastia.san@mail.ru",
+                    CreationDate = DateTime.Now,
+                    Password = Crypto.HashPassword("dhfuytghjql`n"),
+                    RoleId = 2
+                });
                 db.SaveChanges();
             }
         }

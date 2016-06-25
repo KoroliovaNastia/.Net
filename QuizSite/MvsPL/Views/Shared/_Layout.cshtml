@@ -41,13 +41,28 @@
 <body>
     <header>
         <a href="http://www.mail.ru"><span>&laquo; My Email: </span>K.Nastia.san@mail.ru <span>&raquo;</span></a>
-        <span class="right_ab">
-            <a href="#" target="_blank">More GAME</a>
+        @*<span class="right_ab">*@
+            @*<a href="#" target="_blank">More GAME</a>
             <a href="#">More PAZZLE</a>
-            <a href="#"><strong>And QUIZ</strong></a>
-            <a href="http://localhost:16127/Account/Login/">Log in</a>
-            <a href="http://localhost:16127/Account/Register/">Sing up</a>
-        </span>
+            <a href="#"><strong>And QUIZ</strong></a>*@
+            @*<a class="glyphicon glyphicon-log-in" href="http://localhost:16127/Account/Login/">  Log in</a>
+                <a href="http://localhost:16127/Account/Register/">Sing up</a>*@
+            @Html.Partial("_LoginPartial")
+        @*</span>*@
+
+        @*<div class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, user !!! <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sing up</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+
+        </div>*@
         <div class="clr"></div>
     </header><!-- header -->
     <!-- Carousel
@@ -69,13 +84,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Quiz site</a>
+                        <a class="navbar-brand" href="http://localhost:16127/Test/Index/">Quiz site</a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="/Views/Home/Home.cshtml">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li class="active"><a href="http://localhost:16127/Test/Index/">Home</a></li>
+                            <li><a href="http://localhost:16127/Home/About/">About</a></li>
+                            <li><a href="http://localhost:16127/Test/AllTests/">Our tests</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
@@ -94,7 +109,7 @@
             </nav>
         </div>
     </div>
-   
+
     <div class="container marketing">
         @RenderBody()
         <hr class="featurette-divider">

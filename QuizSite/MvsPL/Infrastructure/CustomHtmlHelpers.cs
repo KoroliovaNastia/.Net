@@ -12,5 +12,10 @@ namespace MvsPL.Infrastructure
             tag.MergeAttribute("value", buttonText);
             return new MvcHtmlString(tag.ToString(TagRenderMode.SelfClosing));
         }
+
+        public static MvcHtmlString If(this MvcHtmlString value, bool evaluation)
+        {
+            return evaluation ? value : MvcHtmlString.Empty;
+        }
     }
 }
