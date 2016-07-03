@@ -48,7 +48,7 @@ namespace BLL.Infrastructure
                 Id = question.Id,
                 Formulation = question.Formulation,
                 SelectedAnswer = question.SelectedAnswer,
-                TrueAnswer =ToAnswersDto( question.TrueAnswer)
+                TrueAnswer =question.TrueAnswer
             };
         }
 
@@ -60,7 +60,7 @@ namespace BLL.Infrastructure
                 Id = question.Id,
                 Formulation = question.Formulation,
                 SelectedAnswer = question.SelectedAnswer,
-                TrueAnswer = ToAnswers(question.TrueAnswer)
+                TrueAnswer = question.TrueAnswer
             };
         }
 

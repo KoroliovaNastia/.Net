@@ -10,7 +10,7 @@ using DAL.Interfaces;
 
 namespace BLL.Services
 {
-    class QuestionService:IQuestionService
+    public class QuestionService:IQuestionService
     {
         IUnitOfWork Database { get; set; }
 
@@ -38,6 +38,31 @@ namespace BLL.Services
         {
             Database.Questions.Create(newQuestion.ToQuestion());
             Database.Save();
+        }
+
+        public IEnumerable<AnswersDTO> GetAnswers()
+        {
+            return Database.Answers.GetAll().Select(answer => answer.ToAnswersDto());
+        }
+
+        public IEnumerable<AnswersDTO> GetAnswersByQuestionId(int? id)
+        {
+            return Database.Answers.GetAll().Select(answer => answer.ToAnswersDto()).Where(answerId=>answerId.QuestionId==id);
+        }
+
+        public AnswersDTO GetAnswerById(int id)
+        {
+            return Database.Answers.Get(id).ToAnswersDto();
+        }
+
+        public void CreateNewAnswer(AnswersDTO newAnswer)
+        {
+            Database.Answers.Create(newAnswer.ToAnswers());
+            Database.Save();
+        }
+        public IEnumerable<QuestionDTO> GetQuestionsByTestId(int? id)
+        {
+            return Database.Questions.GetAll().Select(question => question.ToQuestionDto()).Where(questionTestId => questionTestId.TestDtoId == id);
         }
     }
 }

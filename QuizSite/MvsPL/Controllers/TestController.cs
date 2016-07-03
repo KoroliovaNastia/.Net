@@ -4,8 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BLL.Interfaces;
+using Microsoft.Ajax.Utilities;
 using MvsPL.Models;
 using MvsPL.Infrastructure;
+using PagedList;
+using PagedList.Mvc;
 
 namespace MvsPL.Controllers
 {
@@ -23,20 +26,22 @@ namespace MvsPL.Controllers
             return View();
         }
         [HttpGet]
-        public ActionResult GetTest()
-        {
-            return View();
-        }
+        //public ActionResult GetTest()
+        //{
+        //    return View();
+        //}
 
-        [HttpPost]
+        //[HttpPost]
         public ActionResult GetTest(int? id)
         {
             return View(testService.GetTest(id).ToMvcTest());
         }
 
-        public ActionResult AllTests()
+        public ActionResult AllTests(int? page)
         {
-            return View(testService.GetTests().Select(user => user.ToMvcTest()));
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+            return View(testService.GetTests().Select(user => user.ToMvcTest()).ToPagedList(pageNumber,pageSize));
         }
 
         //protected override void Dispose(bool disposing)
@@ -57,8 +62,7 @@ namespace MvsPL.Controllers
         {
             testViewModel.DateOfPublication = DateTime.Now;
             testService.CreateNewTest(testViewModel.ToBllTest());
-
-            return RedirectToAction("Index");
+            return RedirectToAction("AllTests");
         }
 
         [HttpGet]
@@ -74,7 +78,7 @@ namespace MvsPL.Controllers
             {
                 Id = 1,
                 Formulation = "What is your favourite language",
-                TrueAnswer = new AnswerViewModel {Text = "ASP.NET"},
+                TrueAnswer  = "ASP.NET",
                 Answers = new List<AnswerViewModel>
                 {
                     new AnswerViewModel {Id = 1, Text = "PHP"},
@@ -88,12 +92,12 @@ namespace MvsPL.Controllers
             {
                 Id = 2,
                 Formulation = "What is your favourite DB",
-                TrueAnswer = new AnswerViewModel {Text = "SQL Server"},
+                TrueAnswer ="SQL Server",
                 Answers = new List<AnswerViewModel>
                 {
-                    new AnswerViewModel {Id = 1, Text = "SQL Server"},
-                    new AnswerViewModel {Id = 2, Text = "MyQL"},
-                    new AnswerViewModel {Id = 3, Text = "Oracle"}
+                    new AnswerViewModel {Id = 4, Text = "SQL Server"},
+                    new AnswerViewModel {Id = 5, Text = "MyQL"},
+                    new AnswerViewModel {Id = 6, Text = "Oracle"}
                 }
             };
 
@@ -118,21 +122,22 @@ namespace MvsPL.Controllers
         [HttpPost]
         public ActionResult PassTest(TestViewModel model)
         {
-            UserAnswers us = new UserAnswers() {MyAnswers = new List<AnswerViewModel>()};
+            List<int> ids = new List<int>();
             //if (ModelState.IsValid)
             //{
             foreach (var q in model.Questions)
             {
-                var qId = q.Id;
-                var selectedAnswer = q.SelectedAnswer;
-                us.MyAnswers.Add(new AnswerViewModel { Id = qId, Text = selectedAnswer });
+                ids.Add(q.Id);
+                //var qId = q.Id;
+                //var selectedAnswer = q.SelectedAnswer;
+                //us.MyAnswers.Add(new AnswerViewModel { Id = qId, Text = selectedAnswer });
                 // Save the data 
             }
             //    //return RedirectToAction("Result"); //PRG Pattern
             //}
             //to do : reload questions and answers
             //return View(model);
-            return View("Result",us.MyAnswers);
+            return RedirectToAction("SaveMyAnswers", "Home", new{ answersId= (IEnumerable<int>)ids});
         }
         //[HttpGet]
         //public ActionResult Result(UserAnswers us)
@@ -144,11 +149,13 @@ namespace MvsPL.Controllers
         //{
         //    return View(user);
         //}
-        //public ActionResult GetQuestion(TestViewModel test, int id)
-        //{
-        //    ICollection<QuestionViewModel> questions = test.Questions;
-        //    return View(test.GetQuestion());
+        [HttpPost]
+        public ActionResult GetQuestion(int? idTest)
+        {
 
-        //}
+            return Json(testService.GetTest(idTest));
+        }
+
+       
     }
 }

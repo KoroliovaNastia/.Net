@@ -53,3 +53,7 @@ C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\System.Web.Helpers.xml
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\WebMatrix.Data.xml
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\WebMatrix.WebData.xml
 C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\PagedList.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\PagedList.Mvc.dll
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\PagedList.xml
+C:\Users\Nastia\Documents\GitHub\.Net\QuizSite\MvsPL\bin\PagedList.Mvc.xml

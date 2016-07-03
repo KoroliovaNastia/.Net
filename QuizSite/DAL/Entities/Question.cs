@@ -15,7 +15,7 @@ namespace DAL.Entities
         public int TestId { get; set; }
         public string Formulation { get; set; }
 
-        public virtual Answers TrueAnswer { get; set; }
+        public string TrueAnswer { get; set; }
         public virtual ICollection<Answers> Answers { get; set; }
 
         public string SelectedAnswer { get; set; }

@@ -1,0 +1,41 @@
+﻿@model MvsPL.Models.QuestionViewModel
+@*@model IEnumerable<MvsPL.Models.QuestionViewModel>*@
+@{
+    ViewBag.Title = "GetQuestion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<p>
+    Question # @Model.Id: @Model.Formulation
+</p>*@
+
+@*@Html.EditorForModel(Model)*@
+@*@foreach (var item in Model)
+{*@
+    @Html.EditorForModel(Model)
+@*}*@
+<script type="text/javascript">
+$('#ajaxTestButton2').click(function () {
+    //alert("AjaxTest2");
+
+    //var testData = { 'testStr': $("#ajaxTesStr1").val() };
+    var idQuestion = 1;
+    $.ajax({
+        type: "POST",
+        url: "/Question/GetQuestion",
+        data: JSON.stringify(idQuestion),
+        //contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: successFunc,
+        error: errorFunc
+    });
+});
+function successFunc(data, status) {
+    alert(data);
+}
+
+function errorFunc(errorData) {
+    alert('Ошибка' + errorData.responseText);
+}
+    </script>
+<button id="ajaxTestButton2" type="button">Отсылка одной строки</button>

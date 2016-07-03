@@ -23,7 +23,7 @@ namespace MvsPL.Controllers
         {
             //var model = userService.GetUsers().Select(u => u.ToMvsUser());
 
-            return View(userService.GetUsers().Select(u => u.ToMvsUser()));
+            return View(userService.GetUsers().Select(u => u.ToMvcUser()));
         }
 
         public ActionResult About()
@@ -54,17 +54,24 @@ namespace MvsPL.Controllers
             //    Role = u.Role.Name
             //});
 
-            return View(userService.GetUsers().Select(u => u.ToMvsUser())); 
+            return View(userService.GetUsers().Select(u => u.ToMvcUser())); 
         }
 
         public ActionResult Details(int? id = 0)
         {
-            return View(userService.GetUser(id).ToMvsUser());
+            return View(userService.GetUser(id).ToMvcUser());
         }
 
         public ActionResult Delete(int? id = 0)
         {
-            return View(userService.GetUser(id).ToMvsUser());
+            return View(userService.GetUser(id).ToMvcUser());
+        }
+
+        public ActionResult SaveMyAnswers(IEnumerable<int> answersId)
+        {
+            UserViewModel user= userService.GetUserByEmail(User.Identity.Name).ToMvcUser();
+            user.MyAnswersId = answersId;
+            return RedirectToAction("Result","Question", user.MyAnswersId);
         }
     }
 }

@@ -6,10 +6,10 @@
 
 @foreach (var item in Model)
 {
-    @*<p>
-        Question # @item.Id: @item.Question.Formulation
-    </p>*@
     <p>
-        @item.Text
+        Question # @item.QuestionId: @Html.Action("GetQuestion",new{id=item.QuestionId}).
+    </p>
+    <p>
+        Your answer:  @item.Text
     </p>
 }

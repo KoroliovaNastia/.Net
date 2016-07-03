@@ -44,11 +44,11 @@ namespace MvsPL.Infrastructure
                 Id = question.Id,
                 Formulation = question.Formulation,
                 SelectedAnswer = question.SelectedAnswer,
-                TrueAnswer = ToBllAnswers(question.TrueAnswer)
+                TrueAnswer = question.TrueAnswer
             };
         }
 
-        public static QuestionViewModel ToMvsQuestion(this QuestionDTO question)
+        public static QuestionViewModel ToMvcQuestion(this QuestionDTO question)
         {
             return new QuestionViewModel()
             {
@@ -56,7 +56,8 @@ namespace MvsPL.Infrastructure
                 Id = question.Id,
                 Formulation = question.Formulation,
                 SelectedAnswer = question.SelectedAnswer,
-                TrueAnswer = ToMvsAnswers(question.TrueAnswer)
+                TrueAnswer = question.TrueAnswer
+                
             };
         }
 
@@ -65,18 +66,18 @@ namespace MvsPL.Infrastructure
             return new AnswersDTO()
             {
                 Id = answers.Id,
-                Question = ToBllQuestion(answers.Question),
+                //Question = ToBllQuestion(answers.Question),
                 QuestionId = answers.QuestionId,
                 Text = answers.Text
             };
         }
 
-        public static AnswerViewModel ToMvsAnswers(this AnswersDTO answers)
+        public static AnswerViewModel ToMvcAnswers(this AnswersDTO answers)
         {
             return new AnswerViewModel()
             {
                 Id = answers.Id,
-                Question = ToMvsQuestion(answers.Question),
+                //Question = ToMvcQuestion(answers.Question),
                 QuestionId = answers.QuestionId,
                 Text = answers.Text
             };
@@ -96,7 +97,7 @@ namespace MvsPL.Infrastructure
             };
         }
 
-        public static UserViewModel ToMvsUser(this UserDTO user)
+        public static UserViewModel ToMvcUser(this UserDTO user)
         {
             return new UserViewModel()
             {
@@ -119,7 +120,7 @@ namespace MvsPL.Infrastructure
             };
         }
 
-        public static RoleViewModel ToMvsRole(this RoleDTO role)
+        public static RoleViewModel ToMvcRole(this RoleDTO role)
         {
             return new RoleViewModel()
             {
@@ -142,7 +143,7 @@ namespace MvsPL.Infrastructure
             };
         }
 
-        public static ProfileViewModel ToMvsProfile(this ProfileDTO profile)
+        public static ProfileViewModel ToMvcProfile(this ProfileDTO profile)
         {
             return new ProfileViewModel()
             {
@@ -152,7 +153,7 @@ namespace MvsPL.Infrastructure
                 LastName = profile.LastName,
                 LastUpdateDate = profile.LastUpdateDate,
                 UserId = profile.UserId,
-                User = ToMvsUser(profile.User)
+                User = ToMvcUser(profile.User)
             };
         }
     }

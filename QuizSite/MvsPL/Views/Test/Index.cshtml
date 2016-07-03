@@ -1,12 +1,22 @@
-﻿
-@*@using MvsPL.Models
-@model IEnumerable<TestViewModel>
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}*@
+﻿@*@using MvsPL.Models
+    @model IEnumerable<TestViewModel>
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }*@
 
 <!DOCTYPE html>
+@*<script src="/Scripts/jquery-1.9.1.min.js"
+        type="text/javascript"></script>*@
+<script src='@Url.Content("~/Scripts/jquery-1.9.1.min.js")' type="text/javascript"></script>
+<script src='@Url.Content("~/Scripts/jquery-ui-1.8.24.min.js")' type="text/javascript"></script>
+<script src='@Url.Content("~/Scripts/MyScripts/jquery.lavalamp.min.js")' type="text/javascript"></script>
+<script src='@Url.Content("~/Scripts/MyScripts/freezeframe.js")' type="text/javascript"></script>
+<script src='@Url.Content("~/Scripts/MyScripts/jquery-2.1.4.js")' type="text/javascript"></script>
+<script src='@Url.Content("~/Scripts/MyScripts/imagesloaded.pkgd.js")' type="text/javascript"></script>
+<script src='@Url.Content("~/Scripts/knockout-3.4.0.js")' type="text/javascript"></script>
+<script src='@Url.Content("~/Scripts/MyScripts/ko-timer.js")' type="text/javascript"></script>
+@Scripts.Render("~/bundles/jquery")
 
 <html>
 <head>
@@ -17,19 +27,122 @@
     <!-- Marketing messaging and featurettes
         ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-    
+    @*@*<div id="les8_ex1" width="400px" height="100px" background="#666699" border="1px solid #333366" margin-bottom="20px">Something else</div>
+            <input type="button" value="Скрыть" onclick="hideDiv();">
+        <input type="button" value="Показать" onclick="showDiv();">*@
+    <script type="text/javascript">
+        //function hideDiv() {
+        //    $('#img').hide();
+        //}
+        //function showDiv() {
+        //    $('#les8_ex1').show();
+        //}
+    </script>
+
+    <script type="text/javascript">
+
+    </script>
+<script>
+    $(function() {
+        first = new freezeframe('.img-circle').freeze();
+
+        //second = new freezeframe({
+        //    'selector': '.img-circle',
+        //    'animation_play_duration': Infinity,
+        //    'non_touch_device_trigger_event': 'click'
+        //}).freeze();
+
+        //third = new freezeframe('.my_class_3').capture().setup();
+
+        //$('.start').click(function (e) {
+        //    e.preventDefault();
+        //    third.trigger();
+        //});
+
+        //$('.stop').click(function (e) {
+        //    e.preventDefault();
+        //    third.release();
+        //});
+
+        $('.my_class_4').freezeframe();
+
+    })
+</script>
+<script type="text/javascript">
+    ////var condition = ko.observable(true); //condition to keep the timer running
+
+    ////var viewModel = {
+    ////    timer: new koTimer(180, {
+    ////        notifyTimeMarks: [60, 120],
+    ////        callback: function () {
+    ////            $('#timer').html('<span class="fin">Time is up!</span>');
+    ////        },
+    ////        keepGoing: condition //when the condition is false, the timer will stop
+    ////    }),
+    ////    stop: function () {
+    ////        condition(false); //set condition to false
+    ////    }
+    ////};
+
+    //////bind to TimeIsUp event
+    ////$(document).on(viewModel.timer.Events.TimeIsUp, function () {
+    ////    //this event is fired when the timer reaches zero
+    ////    console.log('Time is up!');
+    ////});
+
+    //////bind to TimeMarkHit event
+    ////$(document).on(viewModel.timer.Events.TimeMarkHit, function (ev) {
+    ////    //this event is fired every time a time mark is hit
+    ////    console.log('Time elapsed: ' + ev.timeElapsed + ' seconds');
+    ////    if (ev.timeElapsed === 120) {
+    ////        //during last minute, animate size of counter
+    ////        //animation time in milliseconds = 1 minute
+    ////        $('#timer').find('span').animate({ fontSize: '80px' }, 60 * 1000);
+    ////    }
+    ////});
+
+    //////apply ko bindings
+    ////ko.applyBindings(viewModel, $('.main')[0]);
+
+    //function ViewModel() {
+    //    var self = this;
+
+    //    self.timer = ko.observable(4566);
+
+    //    self.hours = ko.computed(function () {
+    //        return Math.floor(self.timer() / 3600);
+    //    }, self);
+
+    //    self.minutes = ko.computed(function () {
+    //        return Math.floor(self.timer() / 60) % 60;
+    //    }, self);
+
+    //    self.seconds = ko.computed(function () {
+    //        return self.timer() % 60;
+    //    }, self);
+
+
+    //    setInterval(function () {
+    //        var newTimer = self.timer() - 1;
+    //        self.timer(newTimer <= 0 ? 60 : newTimer);
+    //    }, 1000);
+    //};
+
+    //ko.applyBindings(new ViewModel());
+</script>
+}
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
-                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                <img class="img-circle" src="/Content/themes/css/images/spinner.gif" alt="Generic placeholder image" width="140" height="140">
                 <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p>Find new test. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                 <p>
                     <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
                 </p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                <img class="img-circle" src="/Content/themes/css/images/tumblr_nd0mwvcatR1s2ngx4o1_500.gif" alt="Generic placeholder image" width="140" height="140">
                 <h2>Heading</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <p>
@@ -37,7 +150,7 @@
                 </p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                <img class="img-circle" src="/Content/themes/css/images/cromwell_lightbulb.gif" alt="Generic placeholder image" width="140" height="140">
                 <h2>Heading</h2>
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                 <p>
@@ -45,8 +158,15 @@
                 </p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
-        <!-- START THE FEATURETTES -->
-        <hr class="featurette-divider">
+    <!-- START THE FEATURETTES -->
+    @*<div id="timer">
+        <span data-bind="text: hours"></span> hrs
+        <span data-bind="text: minutes"></span> minutes
+        <span data-bind="text: seconds"></span> seconds
+    </div>*@
+<hr class="featurette-divider">
+  
+       
         <div class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
@@ -56,5 +176,6 @@
                 <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
             </div>
         </div>
-</body>
+
+    </body>
 </html>

@@ -1,0 +1,153 @@
+﻿@using MvsPL.Models
+@model MvsPL.Models.QuestionViewModel
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Create new question</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.TestViewModelId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TestViewModelId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TestViewModelId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Formulation, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Formulation, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Formulation, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TrueAnswer, htmlAttributes: new {@class = "control-label col-md-2"})
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TrueAnswer, new {htmlAttributes = new {@class = "form-control"}})
+                @Html.ValidationMessageFor(model => model.TrueAnswer, "", new {@class = "text-danger"})
+            </div>
+        </div>
+   @*@Html.Partial("_AnswerPartial"/*,new AnswerViewModel{ QuestionId = Model.Id}*/)*@
+        @*@Html.Partial("_AnswerPartial"/*,new AnswerViewModel{ QuestionId = Model.Id}*/)*@
+        @*<div class="form-group" data-bind="foreach: answers">*@
+           @*@Html.Partial("CreateNewAnswer"/*,new AnswerViewModel{ QuestionId = Model.Id}*/)*@
+            @*@*<input type="text" data-bind="value: Text"/><br/>*@
+        @*</div>
+                <input data-bind="click: addAnswer" type="submit" value="Add answer" class="btn btn-default" />*@
+        @*<input data-bind="click: addAnswer" type="submit" value="Add answer" class="btn btn-default" />*@
+        @*<ul data-bind="foreach: answers">
+            <li data-bind="text: name"></li>
+        </ul>*@
+        @*<div class='liveExample'>
+
+            <form action='@Url.Action("CreateNewAnswer")'>
+                
+                <p>You have asked for <span data-bind='text: answers().length'>&nbsp;</span> answer(s)
+                </p>
+                <table data-bind='visible: answers().length > 0'>
+                    <thead>
+                    <tr>
+                        <th>Answer text</th>
+                        <th>Question id</th>
+                        <th/>
+                    </tr>
+                    </thead>
+                    <tbody data-bind='foreach: answers'>
+                    <tr>
+                        <td><input class='required' data-bind='value: Text, uniqueName: true'/></td>
+                        <td><input class='required number' data-bind='value: QuestionId, uniqueName: true'/></td>
+                        @*<td><a href='#' data-bind='click: $root.removeGift'>Delete</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <button data-bind='click: addAnswer'>Add answer</button>
+                <button data-bind='enable: answers().length > 0' type='submit'>Submit</button>
+            </form>
+
+        </div>*@
+        <script type="text/javascript">
+            //var AnswerModel = function (answers) {
+            //    var self = this;
+            //    self.answers = ko.observableArray(answers);
+
+            //    self.addAnswer = function () {
+            //        self.answers.push({
+            //            Text: "",
+            //            QuestionId: ""
+            //        });
+            //    };
+
+            //    //self.removeGift = function (gift) {
+            //    //    self.gifts.remove(gift);
+            //    //};
+
+            //    self.save = function (form) {
+            //        alert("Could now transmit to server: " + ko.utils.stringifyJson(self.gifts));
+            //        // To actually transmit to server as a regular form post, write this: ko.utils.postJson($("form")[0], self.gifts);
+            //    };
+            //};
+
+            ////var viewModel = new AnswerModel([
+            ////    { name: "Tall Hat", price: "39.95" },
+            ////    { name: "Long Cloak", price: "120.00" }
+            ////]);
+            //ko.applyBindings(viewModel);
+
+            //// Activate jQuery Validation
+            //$("form").validate({ submitHandler: viewModel.save });
+        </script>
+                <script>
+    //                var model = {
+    //    answers: ko.observableArray(),
+    //    addAnswer: function () {
+    //        this.answers.push(new { Text:"", QuestionId: "" });
+    //    }
+                    //};
+                    @*var AnswerModel = function(answers) {
+                        var self = this;
+                        self.answers = ko.observableArray(answers);
+
+                        self.addAnswer = function() {
+                            self.answers.push({
+                                Text: "",
+                                QuestionId: ""
+                            });
+                            $.ajax({
+                                type: "POST",
+                                url: "@Url.Action("CreateNewAnswer", "Question")",
+                                data: ko.toJSON(AnswerModel).self.answers, // Serialize to JSON and take users array
+                            accept: 'application/json',
+                            success: function (answer) { text("Answer add"); } // Your success callback
+                        });
+                        };
+                    };
+    ko.applyBindings(AnswerModel);
+
+
+    var json = ko.toJSON(AnswerModel);
+    $.ajax({
+        type: "POST",
+        url: "@Url.Action("CreateNewAnswer", "Question")",
+        data: ko.toJSON(AnswerModel).self.answers, // Serialize to JSON and take users array
+        accept: 'application/json',
+        success: function (answer) { text("Answer add"); } // Your success callback
+    });*@
+
+          </script>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "GetTest","Test")
+</div>

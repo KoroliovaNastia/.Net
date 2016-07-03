@@ -15,7 +15,7 @@ namespace BLL.DTO
         public int TestDtoId { get; set; }
         public string Formulation { get; set; }
 
-        public virtual AnswersDTO TrueAnswer { get; set; }
+        public string TrueAnswer { get; set; }
 
         public string SelectedAnswer { get; set; }
     }

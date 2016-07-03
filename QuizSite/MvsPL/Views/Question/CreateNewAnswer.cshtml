@@ -1,0 +1,69 @@
+﻿@model MvsPL.Models.AnswerViewModel
+@*<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>*@
+<script src='@Url.Content("~/Scripts/knockout-3.4.0.js")' type="text/javascript"></script>
+@using (Html.BeginForm())
+    {
+    @Html.AntiForgeryToken()
+@*@Html.AntiForgeryToken()*@
+<script>
+        var model = {
+        answers: ko.observableArray(),
+        addAnswer: function() {
+            this.answers.push({ QuestionId: ko.observable(), Text: ko.observable() });
+        }
+    };
+
+        ko.applyBindings(model);
+
+        var json = ko.toJSON(model);
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("CreateNewAnswer", "Question")",
+            data: ko.toJSON(model).answers, // Serialize to JSON and take users array
+            accept: 'application/json',
+            success: function (answer) { alert("Done!"); } // Your success callback
+        });
+    </script>
+
+
+
+<div class="form-horizontal" data-bind="foreach: answers">
+    <h2>Create new answer</h2>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.QuestionId, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.QuestionId, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.QuestionId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Text, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Text, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Text, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    @*<div data-bind="foreach: answers">
+        <input type="text" data-bind="value: QuestionId" id="QuestionId" name="QuestionId"  data-val="true" /><br/>
+        <input type="text" data-bind="value: Text" id="Text" name="Text" data-val="true" /><br />
+    </div>
+    <button data-bind="click: addAnswer">Add answer</button>*@
+
+    @*<ul data-bind="foreach: answers">
+        <li data-bind="text:QuestionId"></li>
+        <li data-bind="text: Text"></li>
+    </ul>*@
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input data-bind="click: addAnswer" type="submit" value="Add answer" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+@*<div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>*@

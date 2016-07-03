@@ -22,5 +22,6 @@ namespace MvsPL.Models
         public string Role { get; set; }
 
         //public virtual RoleViewModel Role { get; set; }
+        public IEnumerable<int> MyAnswersId { get; set; }
     }
 }

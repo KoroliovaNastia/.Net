@@ -1,0 +1,12 @@
+﻿@model PagedList.IPagedList<MvsPL.Models.QuestionViewModel>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@foreach (var item in Model)
+{
+    <h3>Question # @item.Id: @item.Formulation</h3>
+    @Html.Action("GetAnswers",new{ id = item.Id})
+    @Html.ActionLink("Add new answer", "CreateNewAnswer", "Question"/*,new {id=item.Id}*/).If(User.IsInRole("Administrator"))
+}
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("GetAllQuestionsByTestId", new { page }))

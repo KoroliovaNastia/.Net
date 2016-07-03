@@ -13,6 +13,11 @@ namespace BLL.Interfaces
         //QuestionDTO GetQuestionByEmail(string email);
         void CreateNewQuestion(QuestionDTO question);
         IEnumerable<QuestionDTO> GetQuestions();
+        IEnumerable<QuestionDTO> GetQuestionsByTestId(int? id);
         void Dispose();
+        IEnumerable<AnswersDTO> GetAnswers();
+        IEnumerable<AnswersDTO> GetAnswersByQuestionId(int? id);
+        void CreateNewAnswer(AnswersDTO answer);
+        AnswersDTO GetAnswerById(int id);
     }
 }

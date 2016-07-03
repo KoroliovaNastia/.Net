@@ -4,5 +4,23 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@Html.DisplayForModel(Model)
+@Html.EditorForModel(Model)
 
+@if (User.IsInRole("Administrator"))
+{
+    <p>Test id: @Model.Id</p>
+    @Html.Action("GetAllQuestionsByTestId", "Question", new { testId = Model.Id })
+    @*foreach (var item in Model.Questions)
+    {
+        <h1>Question # @item.Id: @item.Formulation</h1>
+        foreach (var a in item.Answers)
+        {
+            <p>@a.Id: @a.Text</p>
+        }
+    }*@
+}
+@*@Html.ActionLink("Pass test", "PassTest", new { id = Model.Id })*@
+<div>
+<a class="btn btn-primary" onclick="location.href = '@Url.Action("PassTest", "Test", new {id = Model.Id})'" role="button">Pass test &raquo;</a>
+@Html.ActionLink("Add new question", "CreateNewQuestion", "Question").If(User.IsInRole("Administrator"))
+</div>

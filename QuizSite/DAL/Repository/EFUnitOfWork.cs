@@ -17,6 +17,7 @@ namespace DAL.Repository
         private UserRepository userRepository;
         private RoleRepository roleRepository;
         private ProfileRepository profileRepository;
+        private AnswerRepository answerRepository;
         public EFUnitOfWork(string connectionString)
         {
             db=new QuizContext(connectionString);
@@ -68,7 +69,15 @@ namespace DAL.Repository
                 return profileRepository;
             }
         }
-
+        public IRepository<Answers> Answers
+        {
+            get
+            {
+                if (answerRepository == null)
+                    answerRepository = new AnswerRepository(db);
+                return answerRepository;
+            }
+        }
         public void Save()
         {
             db.SaveChanges();

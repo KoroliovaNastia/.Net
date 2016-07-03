@@ -1,24 +1,22 @@
-﻿@using MvsPL.Models
-@model IEnumerable<TestViewModel>
+﻿@model PagedList.IPagedList<MvsPL.Models.TestViewModel>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 @{
     ViewBag.Title = "AllTests";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>All Tests</h2>
-<div>
+
     @foreach (var item in Model)
     {
-        @*@*<h3>Title of the test: @item.Title</h3>
-        <p>Category : @item.Category</p>
-        <p>Short Description : @item.ShortDescription</p>
-        <p>Time of passage : @item.TimeToComplete</p>
-        <p>Date of publication : @item.DateOfPublication</p>*@
-        @Html.ActionLink(item.Title,"GetTest",new{item.Id})
+        
+       <h3> @Html.ActionLink(item.Title, "GetTest", new { item.Id })</h3>
     }
-</div>
 <p>
-    @Html.ActionLink("Add new test", "Create")
+    @Html.ActionLink("Add new test", "Create").If(User.IsInRole("Administrator"))
     @Html.ActionLink("Go home", "Index")
-    @Html.ActionLink("Pass test", "PassTest", new { id = 0 })
 </p>
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("AllTests", new { page }))
