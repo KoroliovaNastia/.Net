@@ -13,7 +13,7 @@ namespace BLL.DTO
         public string LastName { get; set; }
         public int Age { get; set; }
         public DateTime LastUpdateDate { get; set; }
-        public int UserId { get; set; }
+        public int? UserId { get; set; }
 
         public virtual UserDTO User { get; set; }
         //public virtual ICollection<Test> MyPassedTest { get; set; }

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using BLL.DTO;
 using BLL.Infrastructure;
 using BLL.Interfaces;
+using DAL.Entities;
 using DAL.Interfaces;
 
 namespace BLL.Services
 {
-    class ProfileService:IProfileService
+   public class ProfileService:IProfileService
     {
         IUnitOfWork Database { get; set; }
 
@@ -23,7 +24,17 @@ namespace BLL.Services
             return Database.Profiles.Get(id).ToProfileDto();
         }
 
-        public IEnumerable<ProfileDTO> GetProfiles()
+       public IEnumerable<ProfileDTO> GetProfilesByNickName(string nickname)
+       {
+           var users = Database.Users.GetAll().FirstOrDefault(t => t.NickName == nickname);
+           var profiles = Database.Profiles.GetAll().Where(u => u.UserId == users.Id);
+           var enumerable = profiles as Profile[] ?? profiles.ToArray();
+           if (!enumerable.Any())
+               return null;
+           return enumerable.Select(p=>p.ToProfileDto());
+       }
+
+       public IEnumerable<ProfileDTO> GetProfiles()
         {
             return Database.Profiles.GetAll().Select(user => user.ToProfileDto());
         }

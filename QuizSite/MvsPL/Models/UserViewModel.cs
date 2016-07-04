@@ -16,6 +16,9 @@ namespace MvsPL.Models
 
         [Display(Name = "Date of user's registration")]
         public DateTime CreationDate { get; set; }
+
+        [Display(Name="User's NickName")]
+        public string NickName { get; set; }
         public int? RoleId { get; set; }
 
         [Display(Name = "User's role in the system")]

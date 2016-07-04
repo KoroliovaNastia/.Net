@@ -23,10 +23,10 @@ namespace MvsPL.Providers
             get { return (IRoleService) DependencyResolver.Current.GetService(typeof (IRoleService)); }
         }
 
-        public override bool IsUserInRole(string email, string roleName)
+        public override bool IsUserInRole(string nickname, string roleName)
         {
 
-            UserDTO user = UserService.GetUsers().FirstOrDefault(u => u.Email == email);
+            UserDTO user = UserService.GetUsers().FirstOrDefault(u => u.NickName == nickname);
 
             if (user == null) return false;
 
@@ -40,7 +40,7 @@ namespace MvsPL.Providers
             return false;
         }
 
-        public override string[] GetRolesForUser(string email)
+        public override string[] GetRolesForUser(string nickname)
         {
             //using (var usRep = new User())
             //{
@@ -50,7 +50,7 @@ namespace MvsPL.Providers
                
 
                 var roles = new string[] {};
-                var user=UserService.GetUserByEmail(email);
+                var user=UserService.GetUserByNick(nickname);
                  if (user == null) return roles;
                 var userRole = user.Role;
                 if (userRole != null)

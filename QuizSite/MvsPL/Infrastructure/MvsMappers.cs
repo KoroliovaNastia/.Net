@@ -92,8 +92,8 @@ namespace MvsPL.Infrastructure
                 CreationDate = user.CreationDate,
                 Password = user.Password,
                 //Role = new RoleDTO{Name=user.Role},
-                RoleId = user.RoleId
-
+                RoleId = user.RoleId,
+                MyAnswersId = user.MyAnswersId
             };
         }
 
@@ -106,8 +106,8 @@ namespace MvsPL.Infrastructure
                 CreationDate = user.CreationDate,
                 Password = user.Password,
                 Role = user.Role.Name,
-                RoleId = user.RoleId
-
+                RoleId = user.RoleId,
+                MyAnswersId = user.MyAnswersId
             };
         }
 
@@ -139,7 +139,7 @@ namespace MvsPL.Infrastructure
                 LastName = profile.LastName,
                 LastUpdateDate = profile.LastUpdateDate,
                 UserId = profile.UserId,
-                User = ToBllUser(profile.User)
+                //User = ToBllUser(profile.User)
             };
         }
 
@@ -153,7 +153,7 @@ namespace MvsPL.Infrastructure
                 LastName = profile.LastName,
                 LastUpdateDate = profile.LastUpdateDate,
                 UserId = profile.UserId,
-                User = ToMvcUser(profile.User)
+                //User = ToMvcUser(profile.User)
             };
         }
     }

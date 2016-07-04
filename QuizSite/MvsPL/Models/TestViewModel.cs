@@ -20,6 +20,6 @@ namespace MvsPL.Models
         public DateTime DateOfPublication { get; set; }
         [Required(ErrorMessage = "Please, check the category of you test or  add new."), ConcurrencyCheck]
         public string Category { get; set; }
-        public virtual ICollection<QuestionViewModel> Questions { get; set; }
+        public IEnumerable<QuestionViewModel> Questions { get; set; }
     }
 }

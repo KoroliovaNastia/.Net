@@ -24,7 +24,7 @@ namespace MvsPL.Providers
             get { return (IRoleService) DependencyResolver.Current.GetService(typeof (IRoleService)); }
         }
 
-        public MembershipUser CreateUser(string email, string password)
+        public MembershipUser CreateUser(string email, string password, string nickname)
         {
             MembershipUser membershipUser = GetUser(email, false);
 
@@ -37,7 +37,7 @@ namespace MvsPL.Providers
             {
                 Email = email,
                 Password = Crypto.HashPassword(password),
-                //http://msdn.microsoft.com/ru-ru/library/system.web.helpers.crypto(v=vs.111).aspx
+                NickName = nickname,
                 CreationDate = DateTime.Now
             };
 

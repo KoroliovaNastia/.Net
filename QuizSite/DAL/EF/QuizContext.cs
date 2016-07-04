@@ -64,6 +64,7 @@ namespace DAL.EF
                 {
                     Id=1,
                     Email = "K.Nastia.san@mail.ru",
+                    NickName = "Kakusei",
                     CreationDate = DateTime.Now,
                     Password = Crypto.HashPassword("dhfuytghjql`n"),
                     RoleId = 2

@@ -29,6 +29,14 @@ namespace BLL.Services
             return Database.Questions.Get(id).ToQuestionDto();
         }
 
+        public IEnumerable<QuestionDTO> GetQuestionsByTestId(int? id)
+        {
+            return Database.Questions.GetAll().Where(q => q.TestId == id).Select(a => a.ToQuestionDto());
+        }
+        public IEnumerable<AnswersDTO> GetAnswersByQuestionId(int? id)
+        {
+            return Database.Answers.GetAll().Where(answerId => answerId.QuestionId == id).Select(answer => answer.ToAnswersDto());
+        }
         public IEnumerable<TestDTO> GetTests()
         {
             return Database.Tests.GetAll().Select(test => test.ToTestDto());

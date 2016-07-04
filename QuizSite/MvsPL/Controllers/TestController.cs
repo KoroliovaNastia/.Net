@@ -67,49 +67,55 @@ namespace MvsPL.Controllers
 
         [HttpGet]
         [Authorize]
-        public ActionResult PassTest()
+        public ActionResult PassTest(int? testId)
         {
 
 
             //the below is hardcoded for DEMO. you may get the data from some  
             //other place and set the questions and answers
 
-            QuestionViewModel q1 = new QuestionViewModel
-            {
-                Id = 1,
-                Formulation = "What is your favourite language",
-                TrueAnswer  = "ASP.NET",
-                Answers = new List<AnswerViewModel>
-                {
-                    new AnswerViewModel {Id = 1, Text = "PHP"},
-                    new AnswerViewModel {Id = 2, Text = "ASP.NET"},
-                    new AnswerViewModel {Id = 3, Text = "Java"}
-                }
-            };
+            //QuestionViewModel q1 = new QuestionViewModel
+            //{
+            //    Id = 1,
+            //    Formulation = "What is your favourite language",
+            //    TrueAnswer  = "ASP.NET",
+            //    Answers = new List<AnswerViewModel>
+            //    {
+            //        new AnswerViewModel {Id = 1, Text = "PHP"},
+            //        new AnswerViewModel {Id = 2, Text = "ASP.NET"},
+            //        new AnswerViewModel {Id = 3, Text = "Java"}
+            //    }
+            //};
 
 
-            QuestionViewModel q2 = new QuestionViewModel
-            {
-                Id = 2,
-                Formulation = "What is your favourite DB",
-                TrueAnswer ="SQL Server",
-                Answers = new List<AnswerViewModel>
-                {
-                    new AnswerViewModel {Id = 4, Text = "SQL Server"},
-                    new AnswerViewModel {Id = 5, Text = "MyQL"},
-                    new AnswerViewModel {Id = 6, Text = "Oracle"}
-                }
-            };
+            //QuestionViewModel q2 = new QuestionViewModel
+            //{
+            //    Id = 2,
+            //    Formulation = "What is your favourite DB",
+            //    TrueAnswer ="SQL Server",
+            //    Answers = new List<AnswerViewModel>
+            //    {
+            //        new AnswerViewModel {Id = 4, Text = "SQL Server"},
+            //        new AnswerViewModel {Id = 5, Text = "MySQL"},
+            //        new AnswerViewModel {Id = 6, Text = "Oracle"}
+            //    }
+            //};
 
-            TestViewModel test = new TestViewModel
+            //TestViewModel test = new TestViewModel
+            //{
+            //    Title = "Your favourite tools",
+            //    Category = "Programming",
+            //    DateOfPublication = DateTime.Now,
+            //    ShortDescription = "Simple question",
+            //    TimeToComplete = new TimeSpan(0, 10, 0),
+            //    Questions = new List<QuestionViewModel> {q1, q2}
+            //};
+            var test = testService.GetTest(testId).ToMvcTest();
+            test.Questions = testService.GetQuestionsByTestId(testId).Select(q => q.ToMvcQuestion());
+            foreach (var item in test.Questions)
             {
-                Title = "Your favourite tools",
-                Category = "Programming",
-                DateOfPublication = DateTime.Now,
-                ShortDescription = "Simple question",
-                TimeToComplete = new TimeSpan(0, 10, 0),
-                Questions = new List<QuestionViewModel> {q1, q2}
-            };
+                item.Answers = testService.GetAnswersByQuestionId(item.Id).Select(a => a.ToMvcAnswers());
+            }
             return View(test);
         }
 
@@ -124,6 +130,8 @@ namespace MvsPL.Controllers
         {
             List<int> ids = new List<int>();
             //if (ModelState.IsValid)
+            //if(model.Questions.Count==0)
+                
             //{
             foreach (var q in model.Questions)
             {
@@ -137,7 +145,7 @@ namespace MvsPL.Controllers
             //}
             //to do : reload questions and answers
             //return View(model);
-            return RedirectToAction("SaveMyAnswers", "Home", new{ answersId= (IEnumerable<int>)ids});
+            return RedirectToAction("SaveMyAnswers", "Home", new{ answersId= ids});
         }
         //[HttpGet]
         //public ActionResult Result(UserAnswers us)

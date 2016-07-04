@@ -8,9 +8,9 @@ namespace MvsPL.Models
 {
     public class LogOnViewModel
     {
-        //[Required]
-        //[Display(Name = "Логин")]
-        //public string UserName { get; set; }
+        [Required]
+        [Display(Name = "Yuor NickName if you have")]
+        public string NickName { get; set; }
 
         [Required(ErrorMessage = "The field can not be empty!")]
         [Display(Name = "Enter your e-mail")]

@@ -21,6 +21,6 @@
 }
 @*@Html.ActionLink("Pass test", "PassTest", new { id = Model.Id })*@
 <div>
-<a class="btn btn-primary" onclick="location.href = '@Url.Action("PassTest", "Test", new {id = Model.Id})'" role="button">Pass test &raquo;</a>
+<a class="btn btn-primary" onclick="location.href = '@Url.Action("PassTest", "Test", new { testId=Model.Id })'" role="button">Pass test &raquo;</a>
 @Html.ActionLink("Add new question", "CreateNewQuestion", "Question").If(User.IsInRole("Administrator"))
 </div>

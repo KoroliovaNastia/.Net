@@ -4,9 +4,9 @@
         type="text/javascript"></script>*@
 @*<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>*@
 <script src='@Url.Content("~/Scripts/knockout-3.4.0.js")' type="text/javascript"></script>
-@*<script src='@Url.Content("~/Scripts/MyScripts/ko-timer.js")' type="text/javascript"></script>
-<script src='@Url.Content("~/Scripts/jquery-1.9.1.min.js")' type="text/javascript"></script>*@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src='@Url.Content("~/Scripts/MyScripts/ko-timer.js")' type="text/javascript"></script>
+<script src='@Url.Content("~/Scripts/jquery-1.9.1.min.js")' type="text/javascript"></script>
+@*<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>*@
 @*<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>*@
 @*@Scripts.Render("~/bundles/jquery")*@
 
@@ -25,10 +25,10 @@
         <h3>Title of the test: @Model.Title</h3>
         @Html.EditorFor(x => x.Questions)
 
-        @foreach (var item in Model.Questions)
+        @*@foreach (var item in Model.Questions)
         {
 
-        }
+        }*@
 
         @Html.Submit("Result")
     </fieldset>

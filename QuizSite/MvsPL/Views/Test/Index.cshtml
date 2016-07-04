@@ -68,69 +68,7 @@
 
     })
 </script>
-<script type="text/javascript">
-    ////var condition = ko.observable(true); //condition to keep the timer running
 
-    ////var viewModel = {
-    ////    timer: new koTimer(180, {
-    ////        notifyTimeMarks: [60, 120],
-    ////        callback: function () {
-    ////            $('#timer').html('<span class="fin">Time is up!</span>');
-    ////        },
-    ////        keepGoing: condition //when the condition is false, the timer will stop
-    ////    }),
-    ////    stop: function () {
-    ////        condition(false); //set condition to false
-    ////    }
-    ////};
-
-    //////bind to TimeIsUp event
-    ////$(document).on(viewModel.timer.Events.TimeIsUp, function () {
-    ////    //this event is fired when the timer reaches zero
-    ////    console.log('Time is up!');
-    ////});
-
-    //////bind to TimeMarkHit event
-    ////$(document).on(viewModel.timer.Events.TimeMarkHit, function (ev) {
-    ////    //this event is fired every time a time mark is hit
-    ////    console.log('Time elapsed: ' + ev.timeElapsed + ' seconds');
-    ////    if (ev.timeElapsed === 120) {
-    ////        //during last minute, animate size of counter
-    ////        //animation time in milliseconds = 1 minute
-    ////        $('#timer').find('span').animate({ fontSize: '80px' }, 60 * 1000);
-    ////    }
-    ////});
-
-    //////apply ko bindings
-    ////ko.applyBindings(viewModel, $('.main')[0]);
-
-    //function ViewModel() {
-    //    var self = this;
-
-    //    self.timer = ko.observable(4566);
-
-    //    self.hours = ko.computed(function () {
-    //        return Math.floor(self.timer() / 3600);
-    //    }, self);
-
-    //    self.minutes = ko.computed(function () {
-    //        return Math.floor(self.timer() / 60) % 60;
-    //    }, self);
-
-    //    self.seconds = ko.computed(function () {
-    //        return self.timer() % 60;
-    //    }, self);
-
-
-    //    setInterval(function () {
-    //        var newTimer = self.timer() - 1;
-    //        self.timer(newTimer <= 0 ? 60 : newTimer);
-    //    }, 1000);
-    //};
-
-    //ko.applyBindings(new ViewModel());
-</script>
-}
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
@@ -176,6 +114,5 @@
                 <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
             </div>
         </div>
-
-    </body>
+</body>
 </html>

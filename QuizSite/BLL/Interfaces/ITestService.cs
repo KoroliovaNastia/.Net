@@ -15,5 +15,7 @@ namespace BLL.Interfaces
         IEnumerable<TestDTO> GetTests();
         void Dispose();
        QuestionDTO GetQuestion(int id);
+       IEnumerable<QuestionDTO> GetQuestionsByTestId(int? id);
+       IEnumerable<AnswersDTO> GetAnswersByQuestionId(int? id);
     }
 }

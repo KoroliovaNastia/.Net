@@ -40,7 +40,7 @@ namespace MvsPL.Providers
 
             //var db = new UserService();
             // получаем id пользователя из таблицы Users по логину
-            var firstOrDefault = UserService.GetUsers().FirstOrDefault(u => u.Email.Equals(username));
+            var firstOrDefault = UserService.GetUsers().FirstOrDefault(u => u.NickName.Equals(username));
             if (firstOrDefault != null)
             {
                 int userId = firstOrDefault.Id;
@@ -79,7 +79,7 @@ namespace MvsPL.Providers
 
            // var db = new UserContext();
             // получаем id пользователя из таблицы Users по логину
-            var firstOrDefault = UserService.GetUsers().FirstOrDefault(u => u.Email.Equals(username));
+            var firstOrDefault = UserService.GetUsers().FirstOrDefault(u => u.NickName.Equals(username));
             if (firstOrDefault != null)
             {
                 int userId = firstOrDefault.Id;

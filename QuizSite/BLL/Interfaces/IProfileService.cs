@@ -14,5 +14,6 @@ namespace BLL.Interfaces
         IEnumerable<ProfileDTO> GetProfiles();
         void Dispose();
         void Update(ProfileDTO profile);
+        IEnumerable<ProfileDTO> GetProfilesByNickName(string nickname);
     }
 }

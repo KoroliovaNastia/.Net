@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using BLL.Interfaces;
 using MvsPL.Infrastructure;
 using MvsPL.Models;
+using MvsPL.Providers;
 
 namespace MvsPL.Controllers
 {
@@ -19,11 +20,17 @@ namespace MvsPL.Controllers
             userService = repository;
         }
 
-        public ActionResult Index()
-        {
-            //var model = userService.GetUsers().Select(u => u.ToMvsUser());
+        //public ActionResult Index(string emnick)
+        //{
+        //    //var model = userService.GetUsers().Select(u => u.ToMvsUser());
+        //    var user = userService.GetUserByEmail(emnick) != null ? userService.GetUserByEmail(emnick).ToMvcUser() : userService.GetUserByNick(emnick).ToMvcUser();
+        //    var profile = (CustomProfileProvider)Profile.Initialize(emnick, true);
+        //    return RedirectToAction("MyProfile",user);
+        //}
 
-            return View(userService.GetUsers().Select(u => u.ToMvcUser()));
+        public ActionResult MyProfile(ProfileViewModel profile)
+        {
+            return View("MyHome", profile);
         }
 
         public ActionResult About()
@@ -67,11 +74,10 @@ namespace MvsPL.Controllers
             return View(userService.GetUser(id).ToMvcUser());
         }
 
-        public ActionResult SaveMyAnswers(IEnumerable<int> answersId)
+        public ActionResult SaveMyAnswers(List<int> answersId)
         {
-            UserViewModel user= userService.GetUserByEmail(User.Identity.Name).ToMvcUser();
-            user.MyAnswersId = answersId;
-            return RedirectToAction("Result","Question", user.MyAnswersId);
+            userService.GetUserByEmail(User.Identity.Name).MyAnswersId=answersId;
+            return RedirectToAction("Result", "Question", new { answersId = userService.GetUserByEmail(User.Identity.Name).MyAnswersId });
         }
     }
 }

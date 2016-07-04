@@ -15,7 +15,7 @@ namespace MvsPL.Models
         public string Formulation { get; set; }
 
         public string TrueAnswer { get; set; }
-        public virtual ICollection<AnswerViewModel> Answers { get; set; }
+        public IEnumerable<AnswerViewModel> Answers { get; set; }
 
         public string SelectedAnswer { get; set; }
         public virtual TestViewModel Test { get; set; }

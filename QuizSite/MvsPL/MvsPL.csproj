@@ -168,6 +168,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\QuestionController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
@@ -184,7 +185,6 @@
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Models\RoleViewModel.cs" />
     <Compile Include="Models\TestViewModel.cs" />
-    <Compile Include="Models\UserAnswers.cs" />
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\CustomMembershipProvider.cs" />
@@ -203,6 +203,8 @@
     <Content Include="Content\themes\css\freezeframe_styles.min.css" />
     <Content Include="Content\themes\css\images\9080607321ab98fa3e70dd24b2513a20.gif" />
     <Content Include="Content\themes\css\images\cromwell_lightbulb.gif" />
+    <Content Include="Content\themes\css\images\keep-calm-admin-need-time-to-think.png" />
+    <Content Include="Content\themes\css\images\keep-calm-and-genius-admin-3.png" />
     <Content Include="Content\themes\css\images\lightbulb.gif" />
     <Content Include="Content\themes\css\images\quiz.gif" />
     <Content Include="Content\themes\css\images\Shiba-inu.gif" />
@@ -441,8 +443,8 @@
     <Content Include="Views\Question\GetAnswers.cshtml" />
     <Content Include="Views\Question\CreateNewQuestion.cshtml" />
     <Content Include="Views\Question\GetAllQuestionsByTestId.cshtml" />
-    <Content Include="Views\Shared\_AnswerPartial.cshtml" />
     <Content Include="Views\Question\CreateNewAnswer.cshtml" />
+    <Content Include="Views\Profile\CreateProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

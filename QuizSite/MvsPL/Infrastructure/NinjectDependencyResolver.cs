@@ -36,6 +36,7 @@ namespace MvsPL.Infrastructure
             kernel.Bind<IUserService>().To<UserService>();
             kernel.Bind<IRoleService>().To<RoleService>();
             kernel.Bind<IQuestionService>().To<QuestionService>();
+            kernel.Bind<IProfileService>().To<ProfileService>();
         }
     }
 }

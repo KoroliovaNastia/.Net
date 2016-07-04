@@ -99,8 +99,8 @@ namespace BLL.Infrastructure
                 CreationDate=user.CreationDate,
                 Password = user.Password,
                 Role = ToRoleDto(user.Role),
-                RoleId=user.RoleId
-                
+                RoleId=user.RoleId,
+                MyAnswersId = user.MyAnswersId
             };
         }
 
@@ -113,7 +113,8 @@ namespace BLL.Infrastructure
                 CreationDate = user.CreationDate,
                 Password = user.Password,
                 Role = ToRole(user.Role),
-                RoleId = user.RoleId
+                RoleId = user.RoleId,
+                MyAnswersId = user.MyAnswersId
             };
         }
 

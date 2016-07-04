@@ -14,6 +14,6 @@ namespace BLL.Interfaces
         void CreateNewUser(UserDTO user);
         IEnumerable<UserDTO> GetUsers();
         void Dispose();
-
+        UserDTO GetUserByNick(string nickname);
     }
 }

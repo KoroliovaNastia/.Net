@@ -1,172 +1,121 @@
-﻿@{
+﻿@model MvsPL.Models.ProfileViewModel
+@{
     ViewBag.Title = "MyHome";
 }
 <!DOCTYPE html>
 <html>
 <head>
     <title>Home</title>
+    <script src='@Url.Content("~/Scripts/jquery-ui-1.8.24.min.js")' type="text/javascript"></script>
+    <script src='@Url.Content("~/Scripts/jquery-1.9.1.min.js")' type="text/javascript"></script>
     @Scripts.Render("~/bundles/myscripts")
     @Styles.Render("~/Content/themes/css/css")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @*@RenderSection("scripts", required: false)*@
     @*@Styles.Render("~/Content/themes/*")*@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="~/Content/themes/css/reset.css" type="text/css"  />
-    <link rel="stylesheet" href="~/Content/themes/css/light.css" type="text/css"  />
-    <script type="text/javascript" src="~/Scripts/MyScripts/jquery-1.4.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/MyScripts/jquery.lavalamp.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/MyScripts/jquery.dropmenu.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="~/Content/themes/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="~/Content/themes/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="~/Content/themes/css/elastislide.css" />
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+    <link href="../../Content/themes/css/demo.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-    <script type="text/javascript">
-        $(function () {
-            $("#menu").lavaLamp({
-                fx: "backout",
-                speed: 700,
-                click: function (event, menuItem) {
-                    return false;
-                }
-            });
-        });
-    </script>
+    <div class="container ">
+        <div class="row text-center" style="padding-top:30px;">
+            <div class="col-md-12">
+                <h1>  USER PROFILE</h1>
+                <br />
+            </div>
+        </div>
+        <div class="row " style="padding-bottom:50px; ">
+            <div class="col-md-3">
+                <img src="../../Content/themes/css/images/keep-calm-and-genius-admin-3.png" class="img-responsive img-thumbnail" />
 
-    <header>
-        <a href="http://www.mail.ru"><span>&laquo; My Email: </span>K.Nastia.san@mail.ru <span>&raquo;</span></a>
-        <span class="right_ab">
-            <a href="#" target="_blank">More GAME</a>
-            <a href="#">More PAZZLE</a>
-            <a href="#"><strong>And QUIZ</strong></a>
-        </span>
-        <div class="clr"></div>
-    </header><!-- header -->
-    }
-    
-    <div class="ob1">
-        <table height="300px" width="300px" style="margin-left: 40px;">
-            <tr>
-                @*<th align="center"><img src="~/Content/themes/css/images/images.jpg" id="logo"></th>*@
-            </tr>
-        </table>
-        @*<div style="float:right; margin-bottom:20px;"><p>My phone:velcom +375(44)XXX-XX-XX</p></div>*@
-    </div>
-
-
-    <div id="wrapper">
-        <div class="lightmenu">
-            <ul id="menu">
-                <li class="current"><a href="MyHome.cshtml">Home</a></li>
-                <li><a id="btn1" href="#" value="btn1">About</a></li>
-                <li><a id="btn2" href="#" value="btn2">Portfolio</a></li>
-                <li><a id="btn3" href="#" value="btn3">Contact</a></li>
-                <li>
-                    <a id="btn8" href="#">Tasks</a>
-                    <ul>
-                        <li><a id="btn4" href="#" value="btn4.1">PHP 1</a></li>
-                        <li><a id="btn5" href="#" value="btn4.2">PHP 2</a></li>
-                        <li><a id="btn6" href="#" value="btn4.3">PHP 3</a></li>
+            </div>
+            <div class="col-md-9">
+                <div class="alert alert-info">
+                    @*Your profile is only 45% complete, to enjoy full feaures you have to complete it 100%.
+                    <br /><br />
+                    <div class="progress" style="height:5px">
+                        <div class="progress-bar progress-bar-striped active progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+                            <span class="sr-only">45% Complete</span>
+                        </div>
+                    </div>*@
+                    To complete your profile please <a href="#">click here</a> .
+                </div>
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-success">My Settings</button>
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Update Profile</a></li>
+                        <li><a href="#">Recent Orders</a></li>
+                        <li><a href="#">My passing tests</a></li>
+                        <li class="divider"></li>
+                        <li><a href="@Url.Action("LogOff", "Account", new { id = "logoutForm" })">Logout</a></li>
                     </ul>
-                </li>
-            </ul>
-            <!--<div class="searchbox">
-                <form method="get" action="">
-                    <input type="text" value="" onfocus="doClear(this)" name="s" class="lightsearch"/>
-                </form>
-            </div>-->
+                </div>
+                <br /><br />
+                <hr />
+                <div>
+
+                    <h3><strong>NickName:</strong>@Model.NickName</h3>
+
+                    <h3><strong>First Name:</strong>@Model.FirstName</h3>
+                    <h3><strong>Last Name:</strong>@Model.LastName</h3>
+                    <h3><strong>Age:</strong>@Model.Age</h3>
+
+                    <h3> <strong> Last update day:</strong> @Model.LastUpdateDate</h3>
+                    <h3><strong> Role: </strong></h3>@if (User.IsInRole("Administrator"))
+                                            {
+                                                <h3>
+                                                    Administrator;
+
+                                                </h3>
+                                            }
+                                            else
+                                            {
+                                                <h3>User</h3>
+                                            }
+
+                    @*<h3> <strong> Social Links :</strong>
+                    </h3>
+                    <br/>
+                    <a href="#" class="btn btn-primary">Facebook <i class="glyphicon glyphicon-play"></i></a>
+                    <a href="#" class="btn btn-danger">Google <i class="glyphicon glyphicon-play"></i></a>
+                    <a href="#" class="btn btn-info">Twitter <i class="glyphicon glyphicon-play"></i></a>*@
+                </div>
+
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6">
+                <h3>Small Biography :</h3>
+                <hr />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris ac nisl tempus, sollicitudin elit vel, pellentesque lorem.
+                    Maecenas hendrerit laoreet lectus a feugiat. Nunc sodales id ipsum ut maximus.
+                    Morbi pellentesque quis diam nec ullamcorper. Nulla facilisi. Donec non nunc augue.
+                    Integer tincidunt consequat porta.
+                </p>
+
+            </div>
+            <div class="col-md-6" style="padding-bottom:80px;">
+                <h3>Registered Address  :</h3>
+                <hr />
+                <h5>568/90 - New Lane Street </h5>
+
+                <h5>Free Way Society</h5>
+                <h5>  United States - 2098-89-00</h5>
+            </div>
         </div>
 
     </div>
-    @RenderBody()
-    <div id="content">
-        <h1>
-            Проблем не существует. Все в мире является головоломкой, а у каждой головоломки есть решение
-        </h1>
-    </div>
-    <script>
-        $(document).ready(function () {
-
-            $('#btn1').click(function () {
-                $.ajax({
-                    url: "page4.1.html",
-                    cache: false,
-                    success: function (html) {
-                        $("#content").html(html);
-                    }
-                });
-            });
-
-
-            $('#btn1').click(function () {
-                $.ajax({
-                    url: "page4.1.html",
-                    cache: false,
-                    success: function (html) {
-                        $("#content").html(html);
-                    }
-                });
-            });
-
-            $('#btn2').click(function () {
-                $.ajax({
-                    url: "page2.html",
-                    cache: false,
-                    success: function (html) {
-                        $("#content").html(html);
-                    }
-                });
-            });
-
-
-            $('#btn3').click(function () {
-                $.ajax({
-                    url: "example.html",
-                    cache: false,
-                    success: function (html) {
-                        $("#content").html(html);
-                    }
-                });
-            });
-            $('#btn4').click(function () {
-                $.ajax({
-                    url: "page4.1.html",
-                    cache: true,
-                    success: function (html) {
-                        $("#content").html(html);
-                    }
-                });
-
-            });
-            $('#btn5').click(function () {
-                $.ajax({
-                    url: "page4.2.html",
-                    cache: false,
-                    success: function (html) {
-                        $("#content").html(html);
-                    }
-                });
-            });
-            $('#btn6').click(function () {
-                $.ajax({
-                    url: "page4.3.html",
-                    cache: false,
-                    success: function (html) {
-                        $("#content").html(html);
-                    }
-                });
-            });
-
-        });
-    </script>
-
-    <footer>
-        <p>Koroliova Anastasia</p>
-    </footer>
+    <!--  CORE SCRIPTS -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
